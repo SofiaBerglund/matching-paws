@@ -8,30 +8,33 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const mongoUrl = "mongodb://localhost/project-work"
-mongoose.connect(mongoUrl, { useNewUrlParser: true })
+mongoose.connect(
+  mongoUrl,
+  { useNewUrlParser: true }
+)
 mongoose.Promise = Promise // Allows mongo to use javascript promises
 
 const Animal = mongoose.model("Animal", {
-  Name: String,
-  Sex: {
-    type: String,
-    required: true
+  name: String,
+  sex: {
+    type: String
+    // required: true
   },
-  Size: {
-    type: String,
-    required: true
+  size: {
+    type: String
+    // required: true
   },
-  Age: {
-    type: Number,
-    required: true
+  age: {
+    type: Number
+    // required: true
   },
-  CatOk: {
-    type: Boolean,
-    required: true
+  catOk: {
+    type: Boolean
+    // required: true
   },
-  DogOk: {
-    type: Boolean,
-    required: true
+  dogOk: {
+    type: Boolean
+    // required: true
   }
 })
 
@@ -39,6 +42,19 @@ app.get("/", (req, res) => {
   res.send("Animals API")
 })
 
-app.listen(8080, () => { // .listen is a express funcition
+app.post("/animals", (req, res) => {
+  const animal = new Animal()
+  animal
+    .save()
+    .then(() => {
+      res.status(201).send("Animal added")
+    })
+    .catch(err => {
+      res.status(400).send(err)
+    })
+})
+
+app.listen(8080, () => {
+  // .listen is a express funcition
   console.log("Server running!")
 })
