@@ -12,7 +12,7 @@ mongoose.connect(
   mongoUrl,
   { useNewUrlParser: true }
 )
-mongoose.Promise = Promise // Allows mongo to use javascript promises
+mongoose.Promise = Promise
 
 const Animal = mongoose.model("Animal", {
   name: String,
@@ -35,7 +35,8 @@ const Animal = mongoose.model("Animal", {
   dogOk: {
     type: Boolean,
     required: true
-  }
+  },
+  image: String
 })
 
 app.get("/", (req, res) => {
@@ -62,6 +63,5 @@ app.post("/animals", (req, res) => {
 })
 
 app.listen(8080, () => {
-  // .listen is a express funcition
   console.log("Server running!")
 })
