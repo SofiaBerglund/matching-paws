@@ -42,6 +42,13 @@ app.get("/", (req, res) => {
   res.send("Animals API")
 })
 
+app.get("/animals", (req, res) => {
+  console.log("hello")
+  Animal.find().then(animals => {
+    res.json(animals)
+  })
+})
+
 app.post("/animals", (req, res) => {
   const animal = new Animal(req.body)
   animal
