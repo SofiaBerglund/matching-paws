@@ -17,24 +17,24 @@ mongoose.Promise = Promise // Allows mongo to use javascript promises
 const Animal = mongoose.model("Animal", {
   name: String,
   sex: {
-    type: String
-    // required: true
+    type: String,
+    required: true
   },
   size: {
-    type: String
-    // required: true
+    type: String,
+    required: true
   },
   age: {
-    type: Number
-    // required: true
+    type: Number,
+    required: true
   },
   catOk: {
-    type: Boolean
-    // required: true
+    type: Boolean,
+    required: true
   },
   dogOk: {
-    type: Boolean
-    // required: true
+    type: Boolean,
+    required: true
   }
 })
 
@@ -43,7 +43,7 @@ app.get("/", (req, res) => {
 })
 
 app.post("/animals", (req, res) => {
-  const animal = new Animal()
+  const animal = new Animal(req.body)
   animal
     .save()
     .then(() => {
