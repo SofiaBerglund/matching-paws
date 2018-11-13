@@ -4,7 +4,28 @@ const animals = "http://localhost:8080/animals"
 
 export default class StartPage extends React.Component {
   state = {
-    animals: []
+    animals: [],
+    filteredAnimals: []
+  }
+
+  checkedBox = e => {
+    this.setState({
+      animals: e.target.value
+    })
+  }
+
+  //Hur filterar vi enligt icheckade boxar?
+  findAnimals() {
+    fetch(animals)
+      .then(response => {
+        return response.json()
+      })
+      .then(json => {
+        this.setState({
+          filteredAnimals: json.data
+        })
+        console.log(json)
+      })
   }
 
   render() {
@@ -15,7 +36,12 @@ export default class StartPage extends React.Component {
           Kön:
           <div>
             <label>Hane</label>
-            <input type="checkbox" name="sex" />
+            <input
+              type="checkbox"
+              name="sex"
+              value={this.state.animals}
+              onChange={this.checkedBox}
+            />
             <label>Tik</label>
             <input type="checkbox" name="sex" />
           </div>
@@ -28,7 +54,7 @@ export default class StartPage extends React.Component {
             <label>Stor</label>
             <input type="checkbox" name="size" />
           </div>
-            Ålder:
+          Ålder:
           <div>
             <label>0-3 år</label>
             <input type="checkbox" name="age" />
@@ -37,17 +63,17 @@ export default class StartPage extends React.Component {
             <label>6+ år</label>
             <input type="checkbox" name="age" />
           </div>
-            Måste kunna bo med katt:
+          Måste kunna bo med katt:
           <div>
             <label>Ja</label>
-            <input type="checkbox" name="" />
+            <input type="checkbox" name="catOK" />
           </div>
           Måste kunna bo med hund:
           <div>
             <label>Ja</label>
-            <input type="checkbox" name="" />
+            <input type="checkbox" name="dogOk" />
           </div>
-          <input type="submit" value="Hitta hund" />
+          <input type="submit" value="Hitta hund" onSubmit={this.findAnimals} />
         </form>
       </div>
     )
