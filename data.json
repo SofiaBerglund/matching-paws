@@ -15,7 +15,7 @@ Hundstallet.
   "age": 3,
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/freja/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/09/freja_0.jpg"
 }
 {
   "name": "Freddie",
@@ -24,7 +24,7 @@ Hundstallet.
   "age": 7,
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/freddie-2/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/freddie.jpg"
 }
 {
   "name": "Bobby",
@@ -33,7 +33,7 @@ Hundstallet.
   "age": 9,
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/bobby-2/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/bobby-1.jpg"
 }
 {
   "name": "Björne",
@@ -42,7 +42,7 @@ Hundstallet.
   "age": 3,
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/bjorne-2/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/05/bj%C3%B6rne-1-1.jpg"
 }
 {
   "name": "Kid",
@@ -51,7 +51,7 @@ Hundstallet.
   "age": 1,
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/kid/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/06/kid-7.jpg"
 }
 {
   "name": "Topsy",
@@ -60,7 +60,7 @@ Hundstallet.
   "age": 5,
   "catOk": true,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/topsy/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/topsy_profil.jpg"
 }
 {
   "name": "Babsan",
@@ -69,7 +69,7 @@ Hundstallet.
   "age": 6,
   "catOk": true,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/babsan/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/babsan-1.jpg"
 }
 {
   "name": "Jolie",
@@ -78,7 +78,7 @@ Hundstallet.
   "age": 5,
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/jolie/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/08/E7B9F739-FE88-45AF-9FE0-DBDBED17E2B4.jpeg"
 }
 {
   "name": "Indie",
@@ -87,7 +87,43 @@ Hundstallet.
   "age": 1,
   "catOk": false,
   "dogOk": true,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/indie/"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/indie-1.jpg"
+}
+{
+  "name": "Mando",
+  "sex": "Hane",
+  "size": "Mellan",
+  "age": 2,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/08/mando_4.jpg"
+}
+{
+  "name": "Kalix",
+  "sex": "Hane",
+  "size": "Mellan",
+  "age": 2,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/06/kalix-1.jpg"
+}
+{
+  "name": "Didrik",
+  "sex": "Hane",
+  "size": "Stor",
+  "age": 2,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/09/Didrik-3.jpg"
+}
+{
+  "name": "Fanny",
+  "sex": "Tik",
+  "size": "Mellan",
+  "age": 3,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/fanny/"
 }
 ---------------
 
