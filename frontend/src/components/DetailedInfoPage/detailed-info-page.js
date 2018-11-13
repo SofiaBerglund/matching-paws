@@ -1,6 +1,6 @@
 import React from "react"
 
-export default class DetailsAnimal extends React.Component {
+export default class DetailedInfoPage extends React.Component {
   render() {
     return (
       <div>

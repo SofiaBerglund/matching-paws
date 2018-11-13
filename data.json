@@ -1,3 +1,5 @@
+Hundstallet.
+
 {
   "name": "Loke",
   "sex": "Hane",
@@ -5,4 +7,152 @@
   "age": 2,
   "catOk": true,
   "dogOk": true
+}
+{
+  "name": "Freja",
+  "sex": "Tik",
+  "size": "Stor",
+  "age": 3,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/freja/"
+}
+{
+  "name": "Freddie",
+  "sex": "Hane",
+  "size": "Liten",
+  "age": 7,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/freddie-2/"
+}
+{
+  "name": "Bobby",
+  "sex": "Hane",
+  "size": "Mellan",
+  "age": 9,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/bobby-2/"
+}
+{
+  "name": "Björne",
+  "sex": "Hane",
+  "size": "Stor",
+  "age": 3,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/bjorne-2/"
+}
+{
+  "name": "Kid",
+  "sex": "Hane",
+  "size": "Stor",
+  "age": 1,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/kid/"
+}
+{
+  "name": "Topsy",
+  "sex": "Hane",
+  "size": "Mellan",
+  "age": 5,
+  "catOk": true,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/topsy/"
+}
+{
+  "name": "Babsan",
+  "sex": "Tik",
+  "size": "Liten",
+  "age": 6,
+  "catOk": true,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/babsan/"
+}
+{
+  "name": "Jolie",
+  "sex": "Tik",
+  "size": "Mellan",
+  "age": 5,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/jolie/"
+}
+{
+  "name": "Indie",
+  "sex": "Hane",
+  "size": "Mellan",
+  "age": 1,
+  "catOk": false,
+  "dogOk": true,
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/indie/"
+}
+---------------
+
+Hundar utan hem:
+
+{
+  "name": "Flash",
+  "sex": "Tik",
+  "size": "Stor",
+  "age": 7,
+  "catOk": false,
+  "dogOk": true,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Flah-1622_004.jpg"
+}
+{
+  "name": "Jojo",
+  "sex": "Tik",
+  "size": "Mellan",
+  "age": 3,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Jojo-1632_001.jpg"
+}
+{
+  "name": "Billy",
+  "sex": "Hane",
+  "size": "Liten",
+  "age": 1,
+  "catOk": true,
+  "dogOk": true,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/Billy-1530_001.jpg"
+}
+{
+  "name": "Gizmo",
+  "sex": "Hane",
+  "size": "Liten",
+  "age": 5,
+  "catOk": false,
+  "dogOk": true,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/03/gismo-475_250.jpg"
+}
+{
+  "name": "Tia",
+  "sex": "Tik",
+  "size": "Mellan",
+  "age": 3,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/09/tia_1362_250.jpeg"
+}
+{
+  "name": "Ingrid",
+  "sex": "Tik",
+  "size": "Liten",
+  "age": 8,
+  "catOk": true,
+  "dogOk": false,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/ingrid_1507_250.jpg"
+}
+{
+  "name": "Stripey",
+  "sex": "Hane",
+  "size": "Mellan",
+  "age": 6,
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/Stripey-1399-11.jpg"
 }

@@ -1,7 +1,7 @@
 import React from "react"
 const animals = "http://localhost:8080/animals"
 
-export default class SearchAnimal extends React.Component {
+export default class StartPage extends React.Component {
   state = {
     animals: []
   }
