@@ -7,28 +7,48 @@ export default class StartPage extends React.Component {
     animals: []
   }
 
-  componentDidMount() {
-    fetch(animals)
-      .then(response => {
-        return response.json()
-      })
-      .then(json => {
-        this.setState({
-          animals: json
-        })
-      })
-  }
-
   render() {
     return (
       <div>
-        <h1>hej</h1>
-        {this.state.animals.map(animal => (
+        <h1>Sök hund</h1>
+        <form>
+          Kön:
           <div>
-            <p animal={animal.name}>{animal.name}</p>
-            <img src={animal.image} />
+            <label>Hane</label>
+            <input type="checkbox" name="sex" />
+            <label>Tik</label>
+            <input type="checkbox" name="sex" />
           </div>
-        ))}
+          Storlek:
+          <div>
+            <label>Liten</label>
+            <input type="checkbox" name="size" />
+            <label>Mellan</label>
+            <input type="checkbox" name="size" />
+            <label>Stor</label>
+            <input type="checkbox" name="size" />
+          </div>
+            Ålder:
+          <div>
+            <label>0-3 år</label>
+            <input type="checkbox" name="age" />
+            <label>4-6 år</label>
+            <input type="checkbox" name="age" />
+            <label>6+ år</label>
+            <input type="checkbox" name="age" />
+          </div>
+            Måste kunna bo med katt:
+          <div>
+            <label>Ja</label>
+            <input type="checkbox" name="" />
+          </div>
+          Måste kunna bo med hund:
+          <div>
+            <label>Ja</label>
+            <input type="checkbox" name="" />
+          </div>
+          <input type="submit" value="Hitta hund" />
+        </form>
       </div>
     )
   }
