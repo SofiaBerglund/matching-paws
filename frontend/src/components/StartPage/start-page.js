@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 const animals = "http://localhost:8080/animals"
 
 export default class StartPage extends React.Component {
