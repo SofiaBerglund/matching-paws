@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import "./start-page.scss"
 const animals = "http://localhost:8080/animals"
 
 export default class StartPage extends React.Component {
@@ -17,7 +18,13 @@ export default class StartPage extends React.Component {
   //   })
   // }
 
-  //Hur filterar vi enligt icheckade boxar?
+  toggleChangeTik = () => {
+    this.setState(prevState => ({
+      checkedSexTik: !prevState.checkedSexTik
+    }))
+  }
+
+  // Hur filterar vi enligt icheckade boxar?
   findAnimals() {
     fetch(animals)
       .then(response => {
@@ -45,14 +52,14 @@ export default class StartPage extends React.Component {
               key="tik"
               value={this.state.checkedSexTik}
               checked={this.state.checkedSexTik}
-              onChange={this.checkedBoxSex}
+              onChange={this.toggleChangeTik}
             />
             <label>Hane</label>
             <input
               type="checkbox"
               name="sex"
               key="hane"
-              value={this.state.checkedSex}
+              value={this.state.checkedSexHane}
               onChange={this.checkedBoxSex}
             />
           </div>

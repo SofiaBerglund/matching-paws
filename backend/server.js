@@ -44,7 +44,6 @@ app.get("/", (req, res) => {
 })
 
 app.get("/animals", (req, res) => {
-  console.log("hello")
   Animal.find().then(animals => {
     res.json(animals)
   })
