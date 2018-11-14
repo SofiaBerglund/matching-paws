@@ -4,15 +4,18 @@ const animals = "http://localhost:8080/animals"
 
 export default class StartPage extends React.Component {
   state = {
-    animals: [],
+    checkedSexTik: false,
+    checkedSexHane: false,
+    // animals: [],
     filteredAnimals: []
   }
 
-  checkedBox = e => {
-    this.setState({
-      animals: e.target.value
-    })
-  }
+  // checkedBoxSex = e => {
+  //   if ()
+  //   this.setState({
+  //     checkedSexTik:
+  //   })
+  // }
 
   //Hur filterar vi enligt icheckade boxar?
   findAnimals() {
@@ -35,15 +38,23 @@ export default class StartPage extends React.Component {
         <form>
           Kön:
           <div>
+            <label>Tik</label>
+            <input
+              type="checkbox"
+              name="sex"
+              key="tik"
+              value={this.state.checkedSexTik}
+              checked={this.state.checkedSexTik}
+              onChange={this.checkedBoxSex}
+            />
             <label>Hane</label>
             <input
               type="checkbox"
               name="sex"
-              value={this.state.animals}
-              onChange={this.checkedBox}
+              key="hane"
+              value={this.state.checkedSex}
+              onChange={this.checkedBoxSex}
             />
-            <label>Tik</label>
-            <input type="checkbox" name="sex" />
           </div>
           Storlek:
           <div>
