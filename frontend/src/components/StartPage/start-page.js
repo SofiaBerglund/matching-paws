@@ -5,9 +5,9 @@ const animals = "http://localhost:8080/animals"
 
 export default class StartPage extends React.Component {
   state = {
-    checkedSexTik: false,
-    checkedSexHane: false,
-    // animals: [],
+    checkedSex: ["tik"],
+    checkedSize: [],
+    checkedAge: [],
     filteredAnimals: []
   }
 
@@ -18,10 +18,20 @@ export default class StartPage extends React.Component {
   //   })
   // }
 
-  toggleChangeTik = () => {
-    this.setState(prevState => ({
-      checkedSexTik: !prevState.checkedSexTik
-    }))
+  handleChecked = e => {
+    //add comments create variables
+    if (this.state[e.target.name].includes(e.target.value)) {
+      //remove
+      const newValues = this.state[e.target.name].filter(
+        item => item !== e.target.value
+      )
+      this.setState({ [e.target.name]: newValues })
+    } else {
+      //add
+      this.setState({
+        [e.target.name]: [...this.state[e.target.name], e.target.value]
+      })
+    }
   }
 
   // Hur filterar vi enligt icheckade boxar?
@@ -48,19 +58,18 @@ export default class StartPage extends React.Component {
             <label>Tik</label>
             <input
               type="checkbox"
-              name="sex"
-              key="tik"
-              value={this.state.checkedSexTik}
-              checked={this.state.checkedSexTik}
-              onChange={this.toggleChangeTik}
+              name="checkedSex"
+              value="tik"
+              checked={this.state.checkedSex.includes("tik")}
+              onChange={this.handleChecked}
             />
             <label>Hane</label>
             <input
               type="checkbox"
-              name="sex"
-              key="hane"
-              value={this.state.checkedSexHane}
-              onChange={this.checkedBoxSex}
+              name="checkedSex"
+              value="hane"
+              checked={this.state.checkedSex.includes("hane")}
+              onChange={this.handleChecked}
             />
           </div>
           Storlek:
