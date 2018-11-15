@@ -48,13 +48,19 @@ app.get("/animals", (req, res) => {
 })
 
 app.post("/animals/search", (req, res) => {
-  Animal.find({
-    sex: { $in: req.body.sex }
-    // size: req.body.size,
-    // age: req.body.age,
-    // catOk: req.body.catOk,
-    // dogOk: req.body.dogOk
-  })
+  const options = {
+    sex: { $in: req.body.sex },
+    size: { $in: req.body.size }
+    // age: req.body.age, add if-statement here as well
+  }
+  if (req.body.catOk) {
+    options.catOk = req.body.catOk
+  }
+  if (req.body.dogOk) {
+    options.dogOk = req.body.dogOk
+  }
+
+  Animal.find(options)
     .then(animals => {
       res.json({ animals })
     })
