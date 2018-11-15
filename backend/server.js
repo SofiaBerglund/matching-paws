@@ -49,7 +49,7 @@ app.get("/animals", (req, res) => {
 
 app.post("/animals/search", (req, res) => {
   Animal.find({
-    sex: { $in: ["hane", "tik"] }
+    sex: { $in: req.body.sex }
     // size: req.body.size,
     // age: req.body.age,
     // catOk: req.body.catOk,

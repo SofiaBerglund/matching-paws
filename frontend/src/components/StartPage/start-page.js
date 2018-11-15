@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./start-page.scss"
-const animals = "http://localhost:8080/animals"
 const filteredAnimals = "http://localhost:8080/animals/search"
 
 export default class StartPage extends React.Component {
@@ -41,7 +40,6 @@ export default class StartPage extends React.Component {
   }
 
   findAnimals = search => {
-    console.log("hello from findAnimals")
     const { sex, size, age, catOk, dogOk } = this.state
     fetch(filteredAnimals, {
       method: "post",
@@ -140,7 +138,7 @@ export default class StartPage extends React.Component {
               type="checkbox"
               name="catOk"
               value="yes"
-              checked={this.state.catOk == true}
+              checked={this.state.catOk === true}
               onChange={this.handleCheckedOtherAnimal}
             />
           </div>
@@ -151,7 +149,7 @@ export default class StartPage extends React.Component {
               type="checkbox"
               name="dogOk"
               value="yes"
-              checked={this.state.dogOk == true}
+              checked={this.state.dogOk === true}
               onChange={this.handleCheckedOtherAnimal}
             />
           </div>
