@@ -29,6 +29,16 @@ export default class StartPage extends React.Component {
     }
   }
 
+  handleCheckedOtherAnimal = e => {
+    //function for true or false input elements
+    const newInput = e.target.name
+    if (this.state[newInput]) {
+      this.setState({ [newInput]: false })
+    } else {
+      this.setState({ [newInput]: true })
+    }
+  }
+
   // Hur filterar vi enligt icheckade boxar?
   findAnimals() {
     fetch(animals)
@@ -124,12 +134,24 @@ export default class StartPage extends React.Component {
           Måste kunna bo med katt:
           <div>
             <label>Ja</label>
-            <input type="checkbox" name="catOK" />
+            <input
+              type="checkbox"
+              name="catOk"
+              value="yes"
+              checked={this.state.catOk == true}
+              onChange={this.handleCheckedOtherAnimal}
+            />
           </div>
           Måste kunna bo med hund:
           <div>
             <label>Ja</label>
-            <input type="checkbox" name="dogOk" />
+            <input
+              type="checkbox"
+              name="dogOk"
+              value="yes"
+              checked={this.state.dogOk == true}
+              onChange={this.handleCheckedOtherAnimal}
+            />
           </div>
           <input type="submit" value="Hitta hund" onSubmit={this.findAnimals} />
         </form>
