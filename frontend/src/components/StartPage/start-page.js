@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./start-page.scss"
 const animals = "http://localhost:8080/animals"
+const filteredAnimals = "http://localhost:8080/animals/search"
 
 export default class StartPage extends React.Component {
   state = {
@@ -14,7 +15,7 @@ export default class StartPage extends React.Component {
   }
 
   handleChecked = e => {
-    //generic function for all multi-choice input elements. Adds or removes values to state array
+    //generic function for all multi-choice input elements. Adds or removes values to state arrays
     const newInput = e.target.name
     const newValue = e.target.value
     if (this.state[newInput].includes(newValue)) {
@@ -39,17 +40,18 @@ export default class StartPage extends React.Component {
     }
   }
 
-  // Hur filterar vi enligt icheckade boxar?
-  findAnimals() {
-    fetch(animals)
+  findAnimals = search => {
+    console.log("hello from findAnimals")
+    const { sex, size, age, catOk, dogOk } = this.state
+    fetch(filteredAnimals, {
+      method: "post",
+      body: { sex, size, age, catOk, dogOk }
+    })
       .then(response => {
         return response.json()
       })
       .then(json => {
-        this.setState({
-          filteredAnimals: json.data
-        })
-        console.log(json)
+        this.setState({ filteredAnimals: json })
       })
   }
 
@@ -57,7 +59,7 @@ export default class StartPage extends React.Component {
     return (
       <div>
         <h1>Sök hund</h1>
-        <form>
+        <form method="post" action="http://localhost:8080/animals/search">
           Kön:
           <div>
             <label>Tik</label>

@@ -25,16 +25,14 @@ const Animal = mongoose.model("Animal", {
     required: true
   },
   age: {
-    type: Number,
-    required: true
+    type: Number
+    // required: true
   },
   catOk: {
-    type: Boolean,
-    required: true
+    type: Boolean
   },
   dogOk: {
-    type: Boolean,
-    required: true
+    type: Boolean
   },
   image: String
 })
@@ -47,6 +45,22 @@ app.get("/animals", (req, res) => {
   Animal.find().then(animals => {
     res.json(animals)
   })
+})
+
+app.post("/animals/search", (req, res) => {
+  Animal.find({
+    sex: { $in: ["hane", "tik"] }
+    // size: req.body.size,
+    // age: req.body.age,
+    // catOk: req.body.catOk,
+    // dogOk: req.body.dogOk
+  })
+    .then(animals => {
+      res.json({ animals })
+    })
+    .catch(err => {
+      res.json(err)
+    })
 })
 
 app.post("/animals", (req, res) => {
