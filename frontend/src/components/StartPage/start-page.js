@@ -5,31 +5,26 @@ const animals = "http://localhost:8080/animals"
 
 export default class StartPage extends React.Component {
   state = {
-    checkedSex: ["tik"],
-    checkedSize: [],
-    checkedAge: [],
+    sex: [],
+    size: [],
+    age: [],
+    catOk: false,
+    dogOk: false,
     filteredAnimals: []
   }
 
-  // checkedBoxSex = e => {
-  //   if ()
-  //   this.setState({
-  //     checkedSexTik:
-  //   })
-  // }
-
   handleChecked = e => {
-    //add comments create variables
-    if (this.state[e.target.name].includes(e.target.value)) {
-      //remove
-      const newValues = this.state[e.target.name].filter(
-        item => item !== e.target.value
-      )
-      this.setState({ [e.target.name]: newValues })
+    //generic function for all multi-choice input elements. Adds or removes values to state array
+    const newInput = e.target.name
+    const newValue = e.target.value
+    if (this.state[newInput].includes(newValue)) {
+      //if box is checked, remove item from array when unchecked
+      const newValues = this.state[newInput].filter(item => item !== newValue)
+      this.setState({ [newInput]: newValues })
     } else {
-      //add
+      //add item to array when box is checked
       this.setState({
-        [e.target.name]: [...this.state[e.target.name], e.target.value]
+        [newInput]: [...this.state[newInput], newValue]
       })
     }
   }
@@ -58,37 +53,73 @@ export default class StartPage extends React.Component {
             <label>Tik</label>
             <input
               type="checkbox"
-              name="checkedSex"
+              name="sex"
               value="tik"
-              checked={this.state.checkedSex.includes("tik")}
+              checked={this.state.sex.includes("tik")}
               onChange={this.handleChecked}
             />
             <label>Hane</label>
             <input
               type="checkbox"
-              name="checkedSex"
+              name="sex"
               value="hane"
-              checked={this.state.checkedSex.includes("hane")}
+              checked={this.state.sex.includes("hane")}
               onChange={this.handleChecked}
             />
           </div>
           Storlek:
           <div>
             <label>Liten</label>
-            <input type="checkbox" name="size" />
+            <input
+              type="checkbox"
+              name="size"
+              value="liten"
+              checked={this.state.size.includes("liten")}
+              onChange={this.handleChecked}
+            />
             <label>Mellan</label>
-            <input type="checkbox" name="size" />
+            <input
+              type="checkbox"
+              name="size"
+              value="mellan"
+              checked={this.state.size.includes("mellan")}
+              onChange={this.handleChecked}
+            />
             <label>Stor</label>
-            <input type="checkbox" name="size" />
+            <input
+              type="checkbox"
+              name="size"
+              value="stor"
+              checked={this.state.size.includes("stor")}
+              onChange={this.handleChecked}
+            />
           </div>
           Ålder:
           <div>
             <label>0-3 år</label>
-            <input type="checkbox" name="age" />
+            <input
+              type="checkbox"
+              name="age"
+              value="0-3"
+              checked={this.state.age.includes("0-3")}
+              onChange={this.handleChecked}
+            />
             <label>4-6 år</label>
-            <input type="checkbox" name="age" />
+            <input
+              type="checkbox"
+              name="age"
+              value="4-6"
+              checked={this.state.age.includes("4-6")}
+              onChange={this.handleChecked}
+            />
             <label>6+ år</label>
-            <input type="checkbox" name="age" />
+            <input
+              type="checkbox"
+              name="age"
+              value="6+"
+              checked={this.state.age.includes("6+")}
+              onChange={this.handleChecked}
+            />
           </div>
           Måste kunna bo med katt:
           <div>
