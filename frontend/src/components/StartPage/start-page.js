@@ -153,7 +153,15 @@ export default class StartPage extends React.Component {
               onChange={this.handleCheckedOtherAnimal}
             />
           </div>
-          <input type="submit" value="Hitta hund" onSubmit={this.findAnimals} />
+          <Link to="/results">
+            <input
+              type="submit"
+              value="Hitta hund"
+              onSubmit={this.findAnimals}
+              name={this.state.filteredAnimals.name}
+              results={this.state.filteredAnimals}
+            />
+          </Link>
         </form>
       </div>
     )

@@ -51,7 +51,7 @@ app.post("/animals/search", (req, res) => {
   const options = {
     sex: { $in: req.body.sex },
     size: { $in: req.body.size }
-    // age: req.body.age, add if-statement here as well
+    // age: req.body.age, add if-statement here as well, change database to include ranges (string). when fetching data to resultsPage, add string that has exact age?
   }
   if (req.body.catOk) {
     options.catOk = req.body.catOk
