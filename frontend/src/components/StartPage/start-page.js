@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./start-page.scss"
+import ResultPage from "../ResultPage/result-page"
 const filteredAnimals = "http://localhost:8080/animals/search"
 
 export default class StartPage extends React.Component {
@@ -158,6 +159,12 @@ export default class StartPage extends React.Component {
           </div>
           <input type="submit" value="Hitta hund" />
         </form>
+        <div>
+          <ResultPage
+            filteredAnimals={this.state.filteredAnimals}
+            name={this.state.filteredAnimals.name}
+          />
+        </div>
       </div>
     )
   }

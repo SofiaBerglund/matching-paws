@@ -4,9 +4,9 @@ import "./result-page.scss"
 const animals = "http://localhost:8080/animals"
 
 export default class ResultPage extends React.Component {
-  // state = {
-  //   animals: []
-  // }
+  state = {
+    results: this.props.filteredAnimals
+  }
 
   // componentDidMount() {
   //   fetch(animals)
@@ -22,13 +22,9 @@ export default class ResultPage extends React.Component {
     return (
       <div>
         <h1>Dina matchningar!</h1>
-        {this.props.results.map(animal => (
-          <div>
-            <h4>{animal.name}</h4>
-            {/* <img src={animal.image} alt="" />
-            <p>Kön: {animal.sex}</p> */}
-          </div>
-        ))}
+        <div>
+          <h4>{this.state.results}</h4>
+        </div>
       </div>
     )
   }
