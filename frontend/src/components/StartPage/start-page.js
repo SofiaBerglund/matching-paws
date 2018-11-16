@@ -169,7 +169,7 @@ export default class StartPage extends React.Component {
             </form>
           </div>
         )}
-        <div>{this.state.showResults && <p> map results here!</p>}</div>
+        <div>{this.state.showResults && <div>map results here!?</div>}</div>
       </div>
     )
   }
