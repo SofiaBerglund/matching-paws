@@ -6,7 +6,8 @@ Hundstallet.
 "size": "Mellan",
 "age": 3,
 "catOk": false,
-"dogOk": true
+"dogOk": true,
+"image": "https://hundstallet.se/wp-content/uploads/2018/11/leo-kopia.jpg"
 }
 
 {
@@ -15,7 +16,8 @@ Hundstallet.
   "size": "Liten",
   "age": 0,
   "catOk": true,
-  "dogOk": true
+  "dogOk": true,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/11/diesel.jpg"
 }
 
 {
@@ -24,7 +26,8 @@ Hundstallet.
   "size": "Liten",
   "age": 2,
   "catOk": true,
-  "dogOk": true
+  "dogOk": true,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/11/loke_1.jpg"
 }
 {
   "name": "Freja",
