@@ -4,10 +4,6 @@ import "./result-page.scss"
 const animals = "http://localhost:8080/animals"
 
 export default class ResultPage extends React.Component {
-  state = {
-    results: this.props.filteredAnimals
-  }
-
   // componentDidMount() {
   //   fetch(animals)
   //     .then(response => response.json())
@@ -23,7 +19,7 @@ export default class ResultPage extends React.Component {
       <div>
         <h1>Dina matchningar!</h1>
         <div>
-          <h4>{this.state.results}</h4>
+          <h4>{this.props.name}</h4>
         </div>
       </div>
     )

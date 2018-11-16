@@ -11,7 +11,9 @@ export default class StartPage extends React.Component {
     age: [],
     catOk: false,
     dogOk: false,
-    filteredAnimals: []
+    filteredAnimals: [],
+    show: true,
+    showResults: false
   }
 
   handleChecked = e => {
@@ -53,118 +55,121 @@ export default class StartPage extends React.Component {
         return response.json()
       })
       .then(json => {
-        this.setState({ filteredAnimals: json })
+        this.setState({
+          filteredAnimals: json,
+          show: false,
+          showResults: true
+        })
       })
   }
 
   render() {
     return (
       <div>
-        <h1>Sök hund</h1>
-        <form onSubmit={this.findAnimals}>
-          Kön:
+        {this.state.show && (
           <div>
-            <label>Tik</label>
-            <input
-              type="checkbox"
-              name="sex"
-              value="tik"
-              checked={this.state.sex.includes("tik")}
-              onChange={this.handleChecked}
-            />
-            <label>Hane</label>
-            <input
-              type="checkbox"
-              name="sex"
-              value="hane"
-              checked={this.state.sex.includes("hane")}
-              onChange={this.handleChecked}
-            />
+            <h1>Sök hund</h1>
+            <form onSubmit={this.findAnimals}>
+              Kön:
+              <div>
+                <label>Tik</label>
+                <input
+                  type="checkbox"
+                  name="sex"
+                  value="tik"
+                  checked={this.state.sex.includes("tik")}
+                  onChange={this.handleChecked}
+                />
+                <label>Hane</label>
+                <input
+                  type="checkbox"
+                  name="sex"
+                  value="hane"
+                  checked={this.state.sex.includes("hane")}
+                  onChange={this.handleChecked}
+                />
+              </div>
+              Storlek:
+              <div>
+                <label>Liten</label>
+                <input
+                  type="checkbox"
+                  name="size"
+                  value="liten"
+                  checked={this.state.size.includes("liten")}
+                  onChange={this.handleChecked}
+                />
+                <label>Mellan</label>
+                <input
+                  type="checkbox"
+                  name="size"
+                  value="mellan"
+                  checked={this.state.size.includes("mellan")}
+                  onChange={this.handleChecked}
+                />
+                <label>Stor</label>
+                <input
+                  type="checkbox"
+                  name="size"
+                  value="stor"
+                  checked={this.state.size.includes("stor")}
+                  onChange={this.handleChecked}
+                />
+              </div>
+              Ålder:
+              <div>
+                <label>0-3 år</label>
+                <input
+                  type="checkbox"
+                  name="age"
+                  value="0-3"
+                  checked={this.state.age.includes("0-3")}
+                  onChange={this.handleChecked}
+                />
+                <label>4-6 år</label>
+                <input
+                  type="checkbox"
+                  name="age"
+                  value="4-6"
+                  checked={this.state.age.includes("4-6")}
+                  onChange={this.handleChecked}
+                />
+                <label>6+ år</label>
+                <input
+                  type="checkbox"
+                  name="age"
+                  value="6+"
+                  checked={this.state.age.includes("6+")}
+                  onChange={this.handleChecked}
+                />
+              </div>
+              Måste kunna bo med katt:
+              <div>
+                <label>Ja</label>
+                <input
+                  type="checkbox"
+                  name="catOk"
+                  value="yes"
+                  checked={this.state.catOk === true}
+                  onChange={this.handleCheckedOtherAnimal}
+                />
+              </div>
+              Måste kunna bo med hund:
+              <div>
+                <label>Ja</label>
+                <input
+                  type="checkbox"
+                  name="dogOk"
+                  value="yes"
+                  checked={this.state.dogOk === true}
+                  onChange={this.handleCheckedOtherAnimal}
+                />
+              </div>
+              <input type="submit" value="Hitta hund" />
+            </form>
           </div>
-          Storlek:
-          <div>
-            <label>Liten</label>
-            <input
-              type="checkbox"
-              name="size"
-              value="liten"
-              checked={this.state.size.includes("liten")}
-              onChange={this.handleChecked}
-            />
-            <label>Mellan</label>
-            <input
-              type="checkbox"
-              name="size"
-              value="mellan"
-              checked={this.state.size.includes("mellan")}
-              onChange={this.handleChecked}
-            />
-            <label>Stor</label>
-            <input
-              type="checkbox"
-              name="size"
-              value="stor"
-              checked={this.state.size.includes("stor")}
-              onChange={this.handleChecked}
-            />
-          </div>
-          Ålder:
-          <div>
-            <label>0-3 år</label>
-            <input
-              type="checkbox"
-              name="age"
-              value="0-3"
-              checked={this.state.age.includes("0-3")}
-              onChange={this.handleChecked}
-            />
-            <label>4-6 år</label>
-            <input
-              type="checkbox"
-              name="age"
-              value="4-6"
-              checked={this.state.age.includes("4-6")}
-              onChange={this.handleChecked}
-            />
-            <label>6+ år</label>
-            <input
-              type="checkbox"
-              name="age"
-              value="6+"
-              checked={this.state.age.includes("6+")}
-              onChange={this.handleChecked}
-            />
-          </div>
-          Måste kunna bo med katt:
-          <div>
-            <label>Ja</label>
-            <input
-              type="checkbox"
-              name="catOk"
-              value="yes"
-              checked={this.state.catOk === true}
-              onChange={this.handleCheckedOtherAnimal}
-            />
-          </div>
-          Måste kunna bo med hund:
-          <div>
-            <label>Ja</label>
-            <input
-              type="checkbox"
-              name="dogOk"
-              value="yes"
-              checked={this.state.dogOk === true}
-              onChange={this.handleCheckedOtherAnimal}
-            />
-          </div>
-          <input type="submit" value="Hitta hund" />
-        </form>
-        <div>
-          <ResultPage
-            filteredAnimals={this.state.filteredAnimals}
-            name={this.state.filteredAnimals.name}
-          />
-        </div>
+        )}
+        <div>{this.state.showResults && <p> map results here!</p>}</div>
       </div>
     )
   }
