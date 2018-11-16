@@ -1,6 +1,24 @@
 Hundstallet.
 
 {
+"name": "Leo",
+"sex": "Hane",
+"size": "Mellan",
+"age": 3,
+"catOk": false,
+"dogOk": true
+}
+
+{
+  "name": "Diesel",
+  "sex": "Hane",
+  "size": "Liten",
+  "age": 0,
+  "catOk": true,
+  "dogOk": true
+}
+
+{
   "name": "Loke",
   "sex": "Hane",
   "size": "Liten",
