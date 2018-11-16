@@ -39,11 +39,14 @@ export default class StartPage extends React.Component {
     }
   }
 
-  findAnimals = search => {
+  findAnimals = event => {
     const { sex, size, age, catOk, dogOk } = this.state
+    event.preventDefault()
     fetch(filteredAnimals, {
       method: "post",
-      body: { sex, size, age, catOk, dogOk }
+      //removed age for now because the function can't handle an empty array. figure out how to include in filter
+      body: JSON.stringify({ sex, size, catOk, dogOk }),
+      headers: { "Content-Type": "application/json" }
     })
       .then(response => {
         return response.json()
@@ -57,7 +60,7 @@ export default class StartPage extends React.Component {
     return (
       <div>
         <h1>Sök hund</h1>
-        <form method="post" action="http://localhost:8080/animals/search">
+        <form onSubmit={this.findAnimals}>
           Kön:
           <div>
             <label>Tik</label>
@@ -153,15 +156,7 @@ export default class StartPage extends React.Component {
               onChange={this.handleCheckedOtherAnimal}
             />
           </div>
-          <Link to="/results">
-            <input
-              type="submit"
-              value="Hitta hund"
-              onSubmit={this.findAnimals}
-              name={this.state.filteredAnimals.name}
-              results={this.state.filteredAnimals}
-            />
-          </Link>
+          <input type="submit" value="Hitta hund" />
         </form>
       </div>
     )
