@@ -11,7 +11,7 @@ export default class StartPage extends React.Component {
     age: [],
     catOk: false,
     dogOk: false,
-    filteredAnimals: [],
+    filteredSearch: [],
     show: true,
     showResults: false
   }
@@ -56,7 +56,7 @@ export default class StartPage extends React.Component {
       })
       .then(json => {
         this.setState({
-          filteredAnimals: json,
+          filteredSearch: json,
           show: false,
           showResults: true
         })
@@ -169,7 +169,15 @@ export default class StartPage extends React.Component {
             </form>
           </div>
         )}
-        <div>{this.state.showResults && <div>map results here!?</div>}</div>
+        {this.state.showResults && (
+          <div>
+            {console.log("hej från showResults")}
+            {/* {this.state.showResults ? results : noResults} */}
+            {this.state.filteredSearch.animals.map(animal => {
+              return <p>{animal.name}</p>
+            })}
+          </div>
+        )}
       </div>
     )
   }
