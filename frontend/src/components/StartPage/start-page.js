@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./start-page.scss"
 import ResultPage from "../ResultPage/result-page"
 const filteredAnimals = "http://localhost:8080/animals/search"
@@ -42,9 +41,9 @@ export default class StartPage extends React.Component {
     }
   }
 
-  findAnimals = event => {
+  findAnimals = e => {
     const { sex, size, age, catOk, dogOk } = this.state
-    event.preventDefault()
+    e.preventDefault()
     fetch(filteredAnimals, {
       method: "post",
       //removed age for now because the function can't handle an empty array. figure out how to include in filter
@@ -171,10 +170,15 @@ export default class StartPage extends React.Component {
         )}
         {this.state.showResults && (
           <div>
-            {console.log("hej från showResults")}
-            {/* {this.state.showResults ? results : noResults} */}
+            <h1>Dina matchningar!</h1>
             {this.state.filteredSearch.animals.map(animal => {
-              return <p>{animal.name}</p>
+              return (
+                <ResultPage
+                  id={animal._id}
+                  name={animal.name}
+                  image={animal.image}
+                />
+              )
             })}
           </div>
         )}

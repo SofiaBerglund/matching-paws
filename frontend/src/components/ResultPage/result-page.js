@@ -1,26 +1,43 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./result-page.scss"
-const animals = "http://localhost:8080/animals"
+import DetailedInfoPage from "../DetailedInfoPage/detailed-info-page"
 
 export default class ResultPage extends React.Component {
-  // componentDidMount() {
-  //   fetch(animals)
-  //     .then(response => response.json())
-  //     .then(json => {
-  //       this.setState({
-  //         animals: json
-  //       })
-  //     })
-  // }
+  state = {
+    searchResult: this.props,
+    showList: true,
+    showDetails: false
+  }
+
+  handleClick = event => {
+    this.setState({
+      showList: false,
+      showDetails: true
+    })
+  }
 
   render() {
     return (
       <div>
-        <h1>Dina matchningar!</h1>
-        <div>
-          <h4>{this.props.name}</h4>
-        </div>
+        {this.state.showList && (
+          <div>
+            <h4>{this.props.name}</h4>
+            <img src={this.props.image} />
+            <button onClick={this.handleClick}>Läs mer</button>
+          </div>
+        )}
+        {this.state.showDetails && (
+          <div>
+            {/* <Link to={`/results/${this.props.id}`}> */}
+            <DetailedInfoPage
+              id={this.props._id}
+              image={this.state.searchResult.image}
+            />
+
+            {/* </Link> */}
+          </div>
+        )}
       </div>
     )
   }

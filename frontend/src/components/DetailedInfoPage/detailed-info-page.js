@@ -5,6 +5,7 @@ export default class DetailedInfoPage extends React.Component {
     return (
       <div>
         <h1>Detaljerad information</h1>
+        <img src={this.props.image} />
       </div>
     )
   }
