@@ -26,7 +26,6 @@ export default class DetailedInfoPage extends React.Component {
     return (
       <div>
         <h1>Detaljerad information</h1>
-        <img src={this.state.detailedInfo.image} />
         <img src={animalObject.image} />
         <p>{animalObject.description}</p>
       </div>
