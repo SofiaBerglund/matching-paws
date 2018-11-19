@@ -1,12 +1,13 @@
 {
-  "name": "sprint-5-repetition-lecture-backend",
+  "name": "matching-paws",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js --exec babel-node"
+    "start": "babel-node server.js",
+    "dev": "nodemon server.js --exec babel-node"
   },
-  "author": "Clara Björklund",
+  "author": "Clara Björklund, Sofia Berglund",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
