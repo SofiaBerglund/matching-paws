@@ -12,7 +12,7 @@ class App extends React.Component {
         <div>
           <Header />
           <Route exact path="/" component={StartPage} />
-          <Route exact path="/results" component={ResultPage} />
+          {/* <Route exact path="/results" component={ResultPage} /> */}
           <Route exact path="/results/:id" component={DetailedInfoPage} />
         </div>
       </Router>
