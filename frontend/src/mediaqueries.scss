@@ -1,0 +1,33 @@
+@media (min-width: 900px) {
+  .search-container {
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .submit-button {
+    width: 50px;
+  }
+  .result-page-wrapper {
+    width: 70%;
+    padding: 0px 10px;
+  }
+  .result-page-container {
+
+  }
+  .result-page-wrapper img {
+    width: 30%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .submit-button {
+    width: 50px;
+  }
+  .search-container {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}

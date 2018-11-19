@@ -19,6 +19,7 @@ $backgroundImage: url('/dog-3.jpg');
   flex-direction: column;
   background-color: rgba(250, 250, 250, 0.6);
   font-family: $fontStyle;
+  text-align: center;
 }
 
 h1{
@@ -45,6 +46,7 @@ h3 {
     margin-left: 10px;
   }
 }
+
 input[type=checkbox]
 {
   -ms-transform: scale(2); /* IE */
@@ -54,7 +56,8 @@ input[type=checkbox]
   padding: 10px;
 }
 
-.submit-button{
+.submit-button {
+  margin: auto;
   position: relative;
   text-align: center;
 }
@@ -70,3 +73,5 @@ input[type=checkbox]
   top: 10%;
   left: 30%;
 }
+
+@import "../../mediaqueries.scss";

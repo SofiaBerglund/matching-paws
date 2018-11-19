@@ -6,11 +6,6 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <h1>Header</h1>
-        <button className="navbar-toggle">
-          <span className="icon-bar" />
-          <span className="icon-bar" />
-          <span className="icon-bar" />
-        </button>
       </div>
     )
   }

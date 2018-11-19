@@ -79,7 +79,7 @@ export default class StartPage extends React.Component {
                     id="checkbox-sex"
                     type="checkbox"
                     name="sex"
-                    value="tik"
+                    value="Tik"
                     checked={this.state.sex.includes("tik")}
                     onChange={this.handleChecked}
                   />
@@ -88,7 +88,7 @@ export default class StartPage extends React.Component {
                     id="checkbox-sex"
                     type="checkbox"
                     name="sex"
-                    value="hane"
+                    value="Hane"
                     checked={this.state.sex.includes("hane")}
                     onChange={this.handleChecked}
                   />
@@ -99,7 +99,7 @@ export default class StartPage extends React.Component {
                   <input
                     type="checkbox"
                     name="size"
-                    value="liten"
+                    value="Liten"
                     checked={this.state.size.includes("liten")}
                     onChange={this.handleChecked}
                   />
@@ -107,7 +107,7 @@ export default class StartPage extends React.Component {
                   <input
                     type="checkbox"
                     name="size"
-                    value="mellan"
+                    value="Mellan"
                     checked={this.state.size.includes("mellan")}
                     onChange={this.handleChecked}
                   />
@@ -115,7 +115,7 @@ export default class StartPage extends React.Component {
                   <input
                     type="checkbox"
                     name="size"
-                    value="stor"
+                    value="Stor"
                     checked={this.state.size.includes("stor")}
                     onChange={this.handleChecked}
                   />
@@ -149,7 +149,6 @@ export default class StartPage extends React.Component {
                 </div>
                 <h3>Måste kunna bo med katt:</h3>
                 <div className="search-container-catOk">
-                  <label>Ja</label>
                   <input
                     type="checkbox"
                     name="catOk"
@@ -160,7 +159,6 @@ export default class StartPage extends React.Component {
                 </div>
                 <h3>Måste kunna bo med hund:</h3>
                 <div className="search-container-dogOk">
-                  <label>Ja</label>
                   <input
                     type="checkbox"
                     name="dogOk"
