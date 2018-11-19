@@ -47,7 +47,7 @@ export default class StartPage extends React.Component {
     fetch(filteredAnimals, {
       method: "post",
       //removed age for now because the function can't handle an empty array. figure out how to include in filter
-      body: JSON.stringify({ sex, size, catOk, dogOk }),
+      body: JSON.stringify({ sex, size, age, catOk, dogOk }),
       headers: { "Content-Type": "application/json" }
     })
       .then(response => {
@@ -121,24 +121,24 @@ export default class StartPage extends React.Component {
                 <input
                   type="checkbox"
                   name="age"
-                  value="0-3"
-                  checked={this.state.age.includes("0-3")}
+                  value="0-3 år"
+                  checked={this.state.age.includes("0-3 år")}
                   onChange={this.handleChecked}
                 />
                 <label>4-6 år</label>
                 <input
                   type="checkbox"
                   name="age"
-                  value="4-6"
-                  checked={this.state.age.includes("4-6")}
+                  value="4-6 år"
+                  checked={this.state.age.includes("4-6 år")}
                   onChange={this.handleChecked}
                 />
                 <label>6+ år</label>
                 <input
                   type="checkbox"
                   name="age"
-                  value="6+"
-                  checked={this.state.age.includes("6+")}
+                  value="6+ år"
+                  checked={this.state.age.includes("6+ år")}
                   onChange={this.handleChecked}
                 />
               </div>
@@ -179,6 +179,9 @@ export default class StartPage extends React.Component {
                 <ResultPage
                   id={animal._id}
                   name={animal.name}
+                  sex={animal.sex}
+                  size={animal.size}
+                  age={animal.age}
                   image={animal.image}
                 />
               )

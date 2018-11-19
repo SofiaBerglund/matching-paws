@@ -25,8 +25,8 @@ const Animal = mongoose.model("Animal", {
     required: true
   },
   age: {
-    type: Number
-    // required: true
+    type: String,
+    required: true
   },
   catOk: {
     type: Boolean
@@ -50,8 +50,8 @@ app.get("/animals", (req, res) => {
 app.post("/animals/search", (req, res) => {
   const options = {
     sex: { $in: req.body.sex },
-    size: { $in: req.body.size }
-    // age: req.body.age, add if-statement here as well, change database to include ranges (string). when fetching data to resultsPage, add string that has exact age?
+    size: { $in: req.body.size },
+    age: { $in: req.body.age }
   }
   if (req.body.catOk) {
     options.catOk = req.body.catOk
