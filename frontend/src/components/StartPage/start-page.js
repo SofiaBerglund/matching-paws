@@ -43,6 +43,7 @@ export default class StartPage extends React.Component {
 
   findAnimals = e => {
     const { sex, size, age, catOk, dogOk } = this.state
+    // const search = this.state.filteredSearch
     e.preventDefault()
     fetch(filteredAnimals, {
       method: "post",
@@ -54,6 +55,7 @@ export default class StartPage extends React.Component {
         return response.json()
       })
       .then(json => {
+        localStorage.setItem("stored animals", JSON.stringify(json))
         this.setState({
           filteredSearch: json,
           show: false,
