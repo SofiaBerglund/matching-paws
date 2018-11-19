@@ -66,11 +66,11 @@ export default class StartPage extends React.Component {
     return (
       <div>
         {this.state.show && (
-          <div>
+          <div className="search-container">
             <h1>Sök hund</h1>
             <form onSubmit={this.findAnimals}>
               Kön:
-              <div>
+              <div className="search-container-sex">
                 <label>Tik</label>
                 <input
                   type="checkbox"
@@ -89,7 +89,7 @@ export default class StartPage extends React.Component {
                 />
               </div>
               Storlek:
-              <div>
+              <div className="search-container-size">
                 <label>Liten</label>
                 <input
                   type="checkbox"
@@ -116,7 +116,7 @@ export default class StartPage extends React.Component {
                 />
               </div>
               Ålder:
-              <div>
+              <div className="search-container-age">
                 <label>0-3 år</label>
                 <input
                   type="checkbox"
@@ -143,7 +143,7 @@ export default class StartPage extends React.Component {
                 />
               </div>
               Måste kunna bo med katt:
-              <div>
+              <div className="search-container-catOk">
                 <label>Ja</label>
                 <input
                   type="checkbox"
@@ -154,7 +154,7 @@ export default class StartPage extends React.Component {
                 />
               </div>
               Måste kunna bo med hund:
-              <div>
+              <div className="search-container-dogOk">
                 <label>Ja</label>
                 <input
                   type="checkbox"
@@ -164,7 +164,10 @@ export default class StartPage extends React.Component {
                   onChange={this.handleCheckedOtherAnimal}
                 />
               </div>
-              <input type="submit" value="Hitta hund" />
+              <div className="submit-button">
+                <img src="./paw-print.png" />
+                <input type="submit" value="Hitta hund" />
+              </div>
             </form>
           </div>
         )}
