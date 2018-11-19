@@ -28,13 +28,10 @@ const Animal = mongoose.model("Animal", {
     type: String,
     required: true
   },
-  catOk: {
-    type: Boolean
-  },
-  dogOk: {
-    type: Boolean
-  },
-  image: String
+  catOk: Boolean,
+  dogOk: Boolean,
+  image: String,
+  description: String
 })
 
 app.get("/", (req, res) => {
