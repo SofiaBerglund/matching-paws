@@ -65,112 +65,116 @@ export default class StartPage extends React.Component {
   render() {
     return (
       <div>
-        {this.state.show && (
-          <div className="search-container">
-            <h1>Sök hund</h1>
-            <form onSubmit={this.findAnimals}>
-              Kön:
-              <div className="search-container-sex">
-                <label>Tik</label>
-                <input
-                  type="checkbox"
-                  name="sex"
-                  value="tik"
-                  checked={this.state.sex.includes("tik")}
-                  onChange={this.handleChecked}
-                />
-                <label>Hane</label>
-                <input
-                  type="checkbox"
-                  name="sex"
-                  value="hane"
-                  checked={this.state.sex.includes("hane")}
-                  onChange={this.handleChecked}
-                />
-              </div>
-              Storlek:
-              <div className="search-container-size">
-                <label>Liten</label>
-                <input
-                  type="checkbox"
-                  name="size"
-                  value="liten"
-                  checked={this.state.size.includes("liten")}
-                  onChange={this.handleChecked}
-                />
-                <label>Mellan</label>
-                <input
-                  type="checkbox"
-                  name="size"
-                  value="mellan"
-                  checked={this.state.size.includes("mellan")}
-                  onChange={this.handleChecked}
-                />
-                <label>Stor</label>
-                <input
-                  type="checkbox"
-                  name="size"
-                  value="stor"
-                  checked={this.state.size.includes("stor")}
-                  onChange={this.handleChecked}
-                />
-              </div>
-              Ålder:
-              <div className="search-container-age">
-                <label>0-3 år</label>
-                <input
-                  type="checkbox"
-                  name="age"
-                  value="0-3 år"
-                  checked={this.state.age.includes("0-3 år")}
-                  onChange={this.handleChecked}
-                />
-                <label>4-6 år</label>
-                <input
-                  type="checkbox"
-                  name="age"
-                  value="4-6 år"
-                  checked={this.state.age.includes("4-6 år")}
-                  onChange={this.handleChecked}
-                />
-                <label>6+ år</label>
-                <input
-                  type="checkbox"
-                  name="age"
-                  value="6+ år"
-                  checked={this.state.age.includes("6+ år")}
-                  onChange={this.handleChecked}
-                />
-              </div>
-              Måste kunna bo med katt:
-              <div className="search-container-catOk">
-                <label>Ja</label>
-                <input
-                  type="checkbox"
-                  name="catOk"
-                  value="yes"
-                  checked={this.state.catOk === true}
-                  onChange={this.handleCheckedOtherAnimal}
-                />
-              </div>
-              Måste kunna bo med hund:
-              <div className="search-container-dogOk">
-                <label>Ja</label>
-                <input
-                  type="checkbox"
-                  name="dogOk"
-                  value="yes"
-                  checked={this.state.dogOk === true}
-                  onChange={this.handleCheckedOtherAnimal}
-                />
-              </div>
-              <div className="submit-button">
-                <img src="./paw-print.png" />
-                <input type="submit" value="Hitta hund" />
-              </div>
-            </form>
-          </div>
-        )}
+        <div className="search-page-wrapper">
+          {this.state.show && (
+            <div className="search-container">
+              <h1>Sök hund</h1>
+              <form className="myForm3" onSubmit={this.findAnimals}>
+                <h3>Kön:</h3>
+                <div className="search-container-sex">
+                  <label>Tik</label>
+                  <input
+                    id="checkbox-sex"
+                    type="checkbox"
+                    name="sex"
+                    value="tik"
+                    checked={this.state.sex.includes("tik")}
+                    onChange={this.handleChecked}
+                  />
+                  <label>Hane</label>
+                  <input
+                    id="checkbox-sex"
+                    type="checkbox"
+                    name="sex"
+                    value="hane"
+                    checked={this.state.sex.includes("hane")}
+                    onChange={this.handleChecked}
+                  />
+                </div>
+                <h3>Storlek:</h3>
+                <div className="search-container-size">
+                  <label>Liten</label>
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="liten"
+                    checked={this.state.size.includes("liten")}
+                    onChange={this.handleChecked}
+                  />
+                  <label>Mellan</label>
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="mellan"
+                    checked={this.state.size.includes("mellan")}
+                    onChange={this.handleChecked}
+                  />
+                  <label>Stor</label>
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="stor"
+                    checked={this.state.size.includes("stor")}
+                    onChange={this.handleChecked}
+                  />
+                </div>
+                <h3>Ålder:</h3>
+                <div className="search-container-age">
+                  <label>0-3 år</label>
+                  <input
+                    type="checkbox"
+                    name="age"
+                    value="0-3 år"
+                    checked={this.state.age.includes("0-3 år")}
+                    onChange={this.handleChecked}
+                  />
+                  <label>4-6 år</label>
+                  <input
+                    type="checkbox"
+                    name="age"
+                    value="4-6 år"
+                    checked={this.state.age.includes("4-6 år")}
+                    onChange={this.handleChecked}
+                  />
+                  <label>6+ år</label>
+                  <input
+                    type="checkbox"
+                    name="age"
+                    value="6+ år"
+                    checked={this.state.age.includes("6+ år")}
+                    onChange={this.handleChecked}
+                  />
+                </div>
+                <h3>Måste kunna bo med katt:</h3>
+                <div className="search-container-catOk">
+                  <label>Ja</label>
+                  <input
+                    type="checkbox"
+                    name="catOk"
+                    value="yes"
+                    checked={this.state.catOk === true}
+                    onChange={this.handleCheckedOtherAnimal}
+                  />
+                </div>
+                <h3>Måste kunna bo med hund:</h3>
+                <div className="search-container-dogOk">
+                  <label>Ja</label>
+                  <input
+                    type="checkbox"
+                    name="dogOk"
+                    value="yes"
+                    checked={this.state.dogOk === true}
+                    onChange={this.handleCheckedOtherAnimal}
+                  />
+                </div>
+                <div className="submit-button">
+                  <img src="./paw-print.png" />
+                  <input type="submit" value="Hitta hund" />
+                </div>
+              </form>
+            </div>
+          )}
+        </div>
         {this.state.showResults && (
           <div>
             <h1>Dina matchningar!</h1>
@@ -188,6 +192,7 @@ export default class StartPage extends React.Component {
             })}
           </div>
         )}
+
       </div>
     )
   }

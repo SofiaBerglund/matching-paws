@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-$fontStyle: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=KoHo|Roboto');
+$fontStyle: 'KoHo', sans-serif;
 $paddingTen: 20px;
 $useFlex: flex;
+$backgroundImage: url('/dog-3.jpg');
 
-body {
-  background-color: #E3D0D8;
+.search-page-wrapper {
+  // background-color: #E3D0D8;
+  background-image: $backgroundImage;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .search-container {
@@ -13,8 +18,16 @@ body {
   display: $useFlex;
   flex-direction: column;
   background-color: rgba(250, 250, 250, 0.6);
-  border-radius: 20px;
   font-family: $fontStyle;
+}
+
+h1{
+  font-family: $fontStyle;
+}
+
+h3 {
+  margin: 0;
+  font-size: 25px;
 }
 
 .search-container-sex,
@@ -22,15 +35,23 @@ body {
 .search-container-age,
 .search-container-catOk,
 .search-container-dogOk  {
-  background-color: pink;
   padding: $paddingTen;
+  font-size: 20px;
 
   input{
-    margin-left: 30px;
-  }
-  label {
     margin-left: 20px;
   }
+  label {
+    margin-left: 10px;
+  }
+}
+input[type=checkbox]
+{
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
 }
 
 .submit-button{
@@ -39,7 +60,7 @@ body {
 }
 .submit-button input {
   padding: 12px 50px;
-  background-color: grey;
+  background-color: #ffeed6;
   font-size: 15px;
   cursor: pointer;
 }
