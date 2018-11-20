@@ -1,9 +1,10 @@
 import React from "react"
 import "./start-page.scss"
 import ResultPage from "../ResultPage/result-page"
-const filteredAnimals = process.env.production
-  ? "https://matching-paws.herokuapp.com/animals/search"
-  : "http://localhost:8080/animals/search"
+const filteredAnimals =
+  process.env.NODE_ENV === "production"
+    ? "https://matching-paws.herokuapp.com/animals/search"
+    : "http://localhost:8080/animals/search"
 
 export default class StartPage extends React.Component {
   state = {
