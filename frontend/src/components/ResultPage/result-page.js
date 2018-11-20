@@ -13,7 +13,7 @@ export default class ResultPage extends React.Component {
       <div>
         <div className="result-page-wrapper">
           <div className="result-page-container">
-            <h4>{this.props.name}</h4>
+            <h2>{this.props.name}</h2>
             <img src={this.props.image} />
             <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
             <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>

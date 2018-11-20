@@ -179,18 +179,22 @@ export default class StartPage extends React.Component {
         {this.state.showResults && (
           <div className="matches-container">
             <h1>Dina matchningar!</h1>
-            {this.state.filteredSearch.animals.map(animal => {
-              return (
-                <ResultPage
-                  id={animal._id}
-                  name={animal.name}
-                  sex={animal.sex}
-                  size={animal.size}
-                  age={animal.age}
-                  image={animal.image}
-                />
-              )
-            })}
+            {this.state.filteredSearch.animals.length === 0 ? (
+              <p>Tyvärr hittar vi inga matchningar</p>
+            ) : (
+              this.state.filteredSearch.animals.map(animal => {
+                return (
+                  <ResultPage
+                    id={animal._id}
+                    name={animal.name}
+                    sex={animal.sex}
+                    size={animal.size}
+                    age={animal.age}
+                    image={animal.image}
+                  />
+                )
+              })
+            )}
           </div>
         )}
       </div>
