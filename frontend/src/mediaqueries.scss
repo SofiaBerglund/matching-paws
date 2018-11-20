@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo|Roboto');
+$fontStyle: 'KoHo', sans-serif;
+
 @media (min-width: 900px) {
   .search-container {
     width: 40%;
@@ -5,29 +8,45 @@
     margin: 0 auto;
     border-radius: 20px;
   }
-  .submit-button {
-    width: 50px;
-  }
   .result-page-wrapper {
     width: 70%;
     padding: 0px 10px;
   }
-  .result-page-container {
-
+  .submit-button img{
+    left: 10%;
   }
   .result-page-wrapper img {
     width: 30%;
   }
+  .hamburger-label {
+    display:none;
+  }
+  .navbar-list {
+    left:0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row;
+    height: 60px;
+    padding: 40px;
+  }
+  .navbar-list a{
+   font-family: $fontStyle;
+   color: black;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-size: 18px;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
-  .submit-button {
-    width: 50px;
-  }
   .search-container {
     width: 60%;
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
+  }
+  .submit-button img{
+    left: 10%;
   }
 }
