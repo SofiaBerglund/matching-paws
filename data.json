@@ -1,7 +1,7 @@
 {
 "name": "Leo",
-"sex": "Hane",
-"size": "Mellan",
+"sex": "hane",
+"size": "mellan",
 "age": 3,
 "catOk": false,
 "dogOk": true,
@@ -10,8 +10,8 @@
 
 {
   "name": "Diesel",
-  "sex": "Hane",
-  "size": "Liten",
+  "sex": "hane",
+  "size": "liten",
   "age": 0,
   "catOk": true,
   "dogOk": true,
@@ -20,8 +20,8 @@
 
 {
   "name": "Loke",
-  "sex": "Hane",
-  "size": "Liten",
+  "sex": "hane",
+  "size": "liten",
   "age": 2,
   "catOk": true,
   "dogOk": true,
@@ -29,8 +29,8 @@
 }
 {
   "name": "Freja",
-  "sex": "Tik",
-  "size": "Stor",
+  "sex": "tik",
+  "size": "stor",
   "age": 3,
   "catOk": false,
   "dogOk": false,
@@ -38,8 +38,8 @@
 }
 {
   "name": "Freddie",
-  "sex": "Hane",
-  "size": "Liten",
+  "sex": "hane",
+  "size": "liten",
   "age": 7,
   "catOk": false,
   "dogOk": false,
@@ -47,8 +47,8 @@
 }
 {
   "name": "Bobby",
-  "sex": "Hane",
-  "size": "Mellan",
+  "sex": "hane",
+  "size": "mellan",
   "age": 9,
   "catOk": false,
   "dogOk": false,
@@ -56,8 +56,8 @@
 }
 {
   "name": "Björne",
-  "sex": "Hane",
-  "size": "Stor",
+  "sex": "hane",
+  "size": "stor",
   "age": 3,
   "catOk": false,
   "dogOk": false,
@@ -65,8 +65,8 @@
 }
 {
   "name": "Kid",
-  "sex": "Hane",
-  "size": "Stor",
+  "sex": "hane",
+  "size": "stor",
   "age": 1,
   "catOk": false,
   "dogOk": false,
@@ -74,8 +74,8 @@
 }
 {
   "name": "Topsy",
-  "sex": "Hane",
-  "size": "Mellan",
+  "sex": "hane",
+  "size": "mellan",
   "age": 5,
   "catOk": true,
   "dogOk": false,
@@ -83,8 +83,8 @@
 }
 {
   "name": "Babsan",
-  "sex": "Tik",
-  "size": "Liten",
+  "sex": "tik",
+  "size": "liten",
   "age": 6,
   "catOk": true,
   "dogOk": false,
@@ -92,8 +92,8 @@
 }
 {
   "name": "Jolie",
-  "sex": "Tik",
-  "size": "Mellan",
+  "sex": "tik",
+  "size": "mellan",
   "age": 5,
   "catOk": false,
   "dogOk": false,
@@ -101,8 +101,8 @@
 }
 {
   "name": "Indie",
-  "sex": "Hane",
-  "size": "Mellan",
+  "sex": "hane",
+  "size": "mellan",
   "age": 1,
   "catOk": false,
   "dogOk": true,
@@ -110,8 +110,8 @@
 }
 {
   "name": "Mando",
-  "sex": "Hane",
-  "size": "Mellan",
+  "sex": "hane",
+  "size": "mellan",
   "age": 2,
   "catOk": false,
   "dogOk": false,
@@ -119,8 +119,8 @@
 }
 {
   "name": "Kalix",
-  "sex": "Hane",
-  "size": "Mellan",
+  "sex": "hane",
+  "size": "mellan",
   "age": 2,
   "catOk": false,
   "dogOk": false,
@@ -128,8 +128,8 @@
 }
 {
   "name": "Didrik",
-  "sex": "Hane",
-  "size": "Stor",
+  "sex": "hane",
+  "size": "stor",
   "age": 2,
   "catOk": false,
   "dogOk": false,
@@ -137,8 +137,8 @@
 }
 {
   "name": "Fanny",
-  "sex": "Tik",
-  "size": "Mellan",
+  "sex": "tik",
+  "size": "mellan",
   "age": 3,
   "catOk": false,
   "dogOk": false,
@@ -150,8 +150,8 @@ Hundar utan hem:
 
 {
   "name": "Flash",
-  "sex": "Tik",
-  "size": "Stor",
+  "sex": "tik",
+  "size": "stor",
   "age": 7,
   "catOk": false,
   "dogOk": true,
@@ -159,8 +159,8 @@ Hundar utan hem:
 }
 {
   "name": "Jojo",
-  "sex": "Tik",
-  "size": "Mellan",
+  "sex": "tik",
+  "size": "mellan",
   "age": 3,
   "catOk": false,
   "dogOk": false,
@@ -168,8 +168,8 @@ Hundar utan hem:
 }
 {
   "name": "Billy",
-  "sex": "Hane",
-  "size": "Liten",
+  "sex": "hane",
+  "size": "liten",
   "age": 1,
   "catOk": true,
   "dogOk": true,
@@ -177,8 +177,8 @@ Hundar utan hem:
 }
 {
   "name": "Gizmo",
-  "sex": "Hane",
-  "size": "Liten",
+  "sex": "hane",
+  "size": "liten",
   "age": 5,
   "catOk": false,
   "dogOk": true,
@@ -186,8 +186,8 @@ Hundar utan hem:
 }
 {
   "name": "Tia",
-  "sex": "Tik",
-  "size": "Mellan",
+  "sex": "tik",
+  "size": "mellan",
   "age": 3,
   "catOk": false,
   "dogOk": false,
@@ -195,8 +195,8 @@ Hundar utan hem:
 }
 {
   "name": "Ingrid",
-  "sex": "Tik",
-  "size": "Liten",
+  "sex": "tik",
+  "size": "liten",
   "age": 8,
   "catOk": true,
   "dogOk": false,
@@ -204,8 +204,8 @@ Hundar utan hem:
 }
 {
   "name": "Stripey",
-  "sex": "Hane",
-  "size": "Mellan",
+  "sex": "hane",
+  "size": "mellan",
   "age": 6,
   "catOk": false,
   "dogOk": false,
