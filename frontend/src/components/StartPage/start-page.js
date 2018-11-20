@@ -79,7 +79,6 @@ export default class StartPage extends React.Component {
                 <div className="search-container-sex">
                   <label>Tik</label>
                   <input
-                    id="checkbox-sex"
                     type="checkbox"
                     name="sex"
                     value="tik"
@@ -88,7 +87,6 @@ export default class StartPage extends React.Component {
                   />
                   <label>Hane</label>
                   <input
-                    id="checkbox-sex"
                     type="checkbox"
                     name="sex"
                     value="hane"
