@@ -1,4 +1,5 @@
 import React from "react"
+import "./detailed-info-page.scss"
 
 export default class DetailedInfoPage extends React.Component {
   state = {
@@ -25,6 +26,7 @@ export default class DetailedInfoPage extends React.Component {
         <h1>Det här är {animalObject.name}!</h1>
         <img src={animalObject.image} />
         <p>{animalObject.description}</p>
+        <a href="mailto:intresseanmalan@matching-paws.com">Intresseanmälan</a>
       </div>
     )
   }
