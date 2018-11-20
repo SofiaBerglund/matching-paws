@@ -2,147 +2,163 @@
 "name": "Leo",
 "sex": "hane",
 "size": "mellan",
-"age": 3,
+"age": "0-3 år",
 "catOk": false,
 "dogOk": true,
-"image": "https://hundstallet.se/wp-content/uploads/2018/11/leo-kopia.jpg"
+"image": "https://hundstallet.se/wp-content/uploads/2018/11/leo-kopia.jpg",
+"description": "Vi söker ett hundkunnigt hem med stort hjärta och önskan att hjälpa en liten kille att hitta sitt absolut sista hem! I och med Leos bakgrund är det enormt viktigt att det nu blir helt rätt för honom. Han ska kunna fungera med andra hundar men för säkerhets skull så ser vi gärna att ni som söker (om ni har hund) har tik eller en väldigt trygg och stabil hanhund. Vi ser gärna att du är aktiv och älskar att vara ute och röra på dig. Likaväl som du kanske gillar att mysa i soffan när det blåser kallt ute. Leo är en anpassningsbar hund, han är en guldhund!"
 }
 
 {
   "name": "Diesel",
   "sex": "hane",
   "size": "liten",
-  "age": 0,
+  "age": "0-3 år",
   "catOk": true,
   "dogOk": true,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/11/diesel.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/11/diesel.jpg",
+  "description": "Till underbara Diesel söker vi efter ett hundvant hem som kan ge en pigg och glad kille ett fartfyllt liv med promenader, hjärngympa och massa kärlek! Han är en stor kille som fortfarande växer, därför är det viktigt att man har styrkan att hålla i honom i alla lägen. Han är killen som älskar att åka bil – han lägger sig snabbt tillrätta och väntar på nästa destination. Han skulle passa perfekt som en trofast kollega i lastbilen! Söker du efter en kamrat att ha med dig på utflykter? Diesel är redo!"
 }
 
 {
   "name": "Loke",
   "sex": "hane",
   "size": "liten",
-  "age": 2,
+  "age": "0-3 år",
   "catOk": true,
   "dogOk": true,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/11/loke_1.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/11/loke_1.jpg",
+  "description": "Till Loke söker vi ett hem med massor av humor och kärlek. Någon som kan ta aktiva promenader där han får utlopp för sin energi. Någon som låter honom sova nära i sängen om natten samt tar med honom på allehanda roliga äventyr. I Loke kommer du att få världens bästa kompis!"
 }
 {
   "name": "Freja",
   "sex": "tik",
   "size": "stor",
-  "age": 3,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/09/freja_0.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/09/freja_0.jpg",
+  "description": "Ett friluftshem! En familj som älskar att vara ute i skog och mark lika mycket som Freja. Hon följer gärna med på vandringsturer och cykelturer. Vi söker ett hem med minimal ensamhetstid då hon inte gillar att vara själv. Helst av allt noll timmar då hon i nuläget är väldigt ledsen när hon blir lämnad ensam. Freja har inga problem att promenera ihop med andra hundar men vill bo som ensamhund."
 }
 {
   "name": "Freddie",
   "sex": "hane",
   "size": "liten",
-  "age": 7,
+  "age": "6+ år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/10/freddie.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/freddie.jpg",
+  "description": "Till pigga Freddie söker vi efter ett hem med mycket humor och kärlek! Freddie är en pigg kille som både syns och hörs och älskar att få all uppmärksamhet. Han söker efter ett hem där han får lugn och ro, därför ska hans hem vara barnfritt. Freddie gillar inte andra hundar och vill bo som ensamhund. Saknar ert  hem en fyrbent glädjespridare? Freddie väntar!"
 }
 {
   "name": "Bobby",
   "sex": "hane",
   "size": "mellan",
-  "age": 9,
+  "age": "6+ år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/10/bobby-1.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/bobby-1.jpg",
+  "description": "Till gulliga Bobby söker vi efter ett hem med mycket kärlek och tid. Någon som gillar att traska runt i skogen och upptäcka nya promenadvägar, Bobby älskar nämligen att upptäcka nya ställen och tackar aldrig nej till en promenad. Inne vill Bobby mysa och kela, och vill ha en självklar plats i soffan. Ett piggt pensionärspar hade passat Bobby som handen i handsken! Känner ni att ert hjärta bultar lite extra för en åldrande hund som Bobby? Han väntar här – kanske just precis på dig!"
 }
 {
   "name": "Björne",
   "sex": "hane",
   "size": "stor",
-  "age": 3,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/05/bj%C3%B6rne-1-1.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/05/bj%C3%B6rne-1-1.jpg",
+  "description": "Till Björne söker vi ett hundvant hem, gärna med erfarenhet av rasen. Hans nya hem ska vara absolut hundfritt, den Björne vi känner klarar inte av att bo med annan hund. Du måste vara fysiskt aktiv med din hund, och ett absolut krav är att du aktiverar Björne mentalt. I Björne finns mycket jobb och han kommer älska ett aktivt och stimulerande liv. Hus är att föredra och finns det barn måste dessa vara tonåringar pga Björnes osäkerhet. Som kompis till Björne så måste du ha barnasinnet kvar, för med Björne måste man leka och ha roligt. Du jobbar med honom, aldrig emot och förstår att glädjen är hans största motivation."
 }
 {
   "name": "Kid",
   "sex": "hane",
   "size": "stor",
-  "age": 1,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/06/kid-7.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/06/kid-7.jpg",
+  "description": "Ett aktivt hem med mycket kärlek! För dig som vandrar, cyklar, löptränar eller bara älskar att gå långa promenader kommer Kid vara den som följer dig genom allt. Kanske skulle han fungera som jakthund, men hemmet bör inte ha för stora krav på jakten. Vi vill att det framtida hemmet inte har så mycket ensamhetstid och att ni löst dagarna bra så att han antingen kan vara med på jobbet eller om någon är hemma med honom. Kid bor gärna tillsammans med en tik men det är inget krav. Hunden i familjen ska i sådana fall vara en stabil hund som gärna är några år gammal. Du jobbar mjukt och positivt med din hund och ser den som en självklar del i din familj."
 }
 {
   "name": "Topsy",
   "sex": "hane",
   "size": "mellan",
-  "age": 5,
+  "age": "4-6 år",
   "catOk": true,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/10/topsy_profil.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/topsy_profil.jpg",
+  "description": "Topsy söker efter ett stabilt och lugnt hem som kan ge denne fantastiske kille härliga promenader och myskvällar. Topsy tycker inte om att vara själv och söker därför efter ett hem som har en plan över hur ensamtiden kommer lösas. Han delar gärna sitt hem med en hundvan katt men då han tycker andra hundar kan vara läskiga söker vi efter ett hundfritt hem. Förutom promenader vill han gärna hitta på aktiviteter och tillsammans med sitt nya hem gå på roliga hundkurser! Hemmet ska vara intresserade av pälsvård då Topsys päls behöver borstas och klippas med jämna mellanrum."
 }
 {
   "name": "Babsan",
   "sex": "tik",
   "size": "liten",
-  "age": 6,
+  "age": "4-6 år",
   "catOk": true,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/10/babsan-1.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/babsan-1.jpg",
+  "description": "Babsan söker efter ett aktivt hem där hon får vara i centrum. Ett hem som gillar långpromenader och träna tricks. Denna donna älskar nämligen att få tänka och skulle verkligen uppskatta att få träna exempelvis nosework. Hon delar gärna sitt hem med katter men då hon inte tycker om andra hundar söker vi efter ett hundfritt hem. Låter Babsan som din drömhund? Tveka inte att höra av dig!"
 }
 {
   "name": "Jolie",
   "sex": "tik",
   "size": "mellan",
-  "age": 5,
+  "age": "4-6 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/08/E7B9F739-FE88-45AF-9FE0-DBDBED17E2B4.jpeg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/08/E7B9F739-FE88-45AF-9FE0-DBDBED17E2B4.jpeg",
+  "description": "Till vår härliga Jolie söker vi ett kärleksfullt hem som kan ge Jolie all den kärlek som hon förtjänar. Hon behöver en ägare som kan hjälpa henne att stärka sitt självförtroende på ett mjukt och roligt sätt. Någon som har möjlighet att ta med sig hunden på det mesta och helst inte behöver lämna sin hund något alls. Drömhemmet bor i ett lugnt område och gillar att gå härliga skogspromenader som hänga på stranden sommartid."
 }
 {
   "name": "Indie",
   "sex": "hane",
   "size": "mellan",
-  "age": 1,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": true,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/10/indie-1.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/10/indie-1.jpg",
+  "description": "Till lilla yrvädret Indie söker vi ett hem med tidigare hundvana och en stor portion humor. Han vill komma till ett hem som gillar att ta med honom på roliga aktiviteter såsom skogspromenader och kanske en och annan kurs. Indie vill nämligen följa med på äventyr, och hans familj gillar friluftsliv, oavsett väder och vind. Hans nya familj ska ha minimal ensamtid till en början och kunna lägga ner mycket tid på ensamhetsträningen. Finns det annan hund i hemmet behöver det vara en stabil hund (i liknande storlek) som gillar brottningsmatcher. Det är nämligen Indies paradlek! När du träffat Indie promenerar han rakt in i ditt hjärta, och ger du honom en andra chans kommer du få en kompis på miljonen!"
 }
 {
   "name": "Mando",
   "sex": "hane",
   "size": "mellan",
-  "age": 2,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/08/mando_4.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/08/mando_4.jpg",
+  "description": "Ett hem med fokus på jakt och/eller eftersök. Mando vill komma till ett hem som föredrar skogsturer framför stadspromenader. Han älskar viltspår.  De djurslag han är mest intresserad av är älg och vildsvin. De flesta av Mandos syskon bor i jakthem och ”arbetar” som jakthundar under säsong och i vill gärna att den här killen hamnar i ett liknande hem. Vi ser att hans framtida familj har tidigare erfarenhet av jakthundar och gärna har haft liknande raser."
 }
 {
   "name": "Kalix",
   "sex": "hane",
   "size": "mellan",
-  "age": 2,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/06/kalix-1.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/06/kalix-1.jpg",
+  "description": "Till underbara Kalix söker vi efter ett hem som älskar utevistelse – denna kille älskar nämligen att röra på sig! Han vill komma till någon som bor ute på landet då storstadslivet inte är någonting för honom. Hans drömhem skulle vara någon vill aktivera sin hund genom drag men som har en mysig plats i soffan vid kvällens slut. Då Kalix är en försiktig själ söker vi efter ett hem utan småbarn, där han kan få vara i centrum. Känner du att just du är rätt hem för Kalix? Tveka inte att höra av dig!"
 }
 {
   "name": "Didrik",
   "sex": "hane",
   "size": "stor",
-  "age": 2,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/wp-content/uploads/2018/09/Didrik-3.jpg"
+  "image": "https://hundstallet.se/wp-content/uploads/2018/09/Didrik-3.jpg",
+  "description": "Till underbara Didrik söker vi efter ett hundvant hem med mycket kärlek och där utevistelse står högt upp på listan. Denna kille älskar nämligen att promenera och tackar aldrig nej till ett nytt äventyr ute i skogen eller löpspåret! Didrik har lekt fint med de hundar han känner, men då han kan tycka att vissa hundmöten är jobbiga så ser vi helst att han får vara ensamhund, där man kan lägga all fokus och träning på honom. Mellan promenaderna vill Didrik få mycket gos och kärlek, och han vill helst vara välkommen i både soffa och säng!"
 }
 {
   "name": "Fanny",
   "sex": "tik",
   "size": "mellan",
-  "age": 3,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/fanny/"
+  "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/fanny/",
+  "description": "Till rara Fanny söker vi en kärleksfull och hundvan familj utan annan hund. Hon vill komma till ett aktivt hem som gillar att gå långa promenader i skog och mark. Familjen hon söker bor i ett lugnt område, gärna lantligt till. Hennes nya hem tycker även att det är kul att hitta på aktiviteter med sin hund. Varför inte Nosework, lydnad eller någon annan rolig hundsport? Utöver aktivering står närhet högt upp på hennes önskelista. Hennes nya familj måste därför ha plats i både soffa och säng för denna rara tjej. Om du vinner Fannys hjärta kommer du att få den finaste följeslagaren livet ut. Hon är ljuvlig!"
 }
 ---------------
 
