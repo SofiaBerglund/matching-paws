@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=KoHo|Roboto');
 $fontStyle: 'KoHo', sans-serif;
 $paddingTen: 20px;
 $useFlex: flex;
@@ -62,6 +61,7 @@ input[type=checkbox]
   width: 170px;
 }
 .submit-button input {
+  -webkit-appearance: none;
   padding: 12px 50px;
   background-color: #ffeed6;
   font-size: 15px;
