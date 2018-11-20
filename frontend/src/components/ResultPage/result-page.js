@@ -8,16 +8,17 @@ export default class ResultPage extends React.Component {
   }
 
   render() {
+    const { sex, size, age, id } = this.props
     return (
       <div>
         <div className="result-page-wrapper">
           <div className="result-page-container">
             <h4>{this.props.name}</h4>
             <img src={this.props.image} />
-            <p>Kön: {this.props.sex}</p>
-            <p>Storlek: {this.props.size}</p>
-            <p>Ålder: {this.props.age}</p>
-            <Link to={`/results/${this.props.id}`}>läs mer</Link>
+            <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
+            <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
+            <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
+            <Link to={`/results/${id}`}>läs mer</Link>
           </div>
         </div>
       </div>

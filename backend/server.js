@@ -6,6 +6,7 @@ import cors from "cors"
 const app = express()
 app.use(bodyParser.json())
 app.use(cors())
+app.use(express.static("public"))
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/project-work"
 mongoose.connect(
@@ -79,6 +80,7 @@ app.post("/animals", (req, res) => {
     })
     .catch(err => {
       res.status(400).send(err)
+      // test
     })
 })
 

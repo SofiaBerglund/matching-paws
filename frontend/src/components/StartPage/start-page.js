@@ -1,7 +1,9 @@
 import React from "react"
 import "./start-page.scss"
 import ResultPage from "../ResultPage/result-page"
-const filteredAnimals = "http://localhost:8080/animals/search"
+const filteredAnimals = process.env.production
+  ? "https://matching-paws.herokuapp.com/animals/search"
+  : "http://localhost:8080/animals/search"
 
 export default class StartPage extends React.Component {
   state = {
@@ -79,7 +81,7 @@ export default class StartPage extends React.Component {
                     id="checkbox-sex"
                     type="checkbox"
                     name="sex"
-                    value="Tik"
+                    value="tik"
                     checked={this.state.sex.includes("tik")}
                     onChange={this.handleChecked}
                   />
@@ -88,7 +90,7 @@ export default class StartPage extends React.Component {
                     id="checkbox-sex"
                     type="checkbox"
                     name="sex"
-                    value="Hane"
+                    value="hane"
                     checked={this.state.sex.includes("hane")}
                     onChange={this.handleChecked}
                   />
@@ -99,7 +101,7 @@ export default class StartPage extends React.Component {
                   <input
                     type="checkbox"
                     name="size"
-                    value="Liten"
+                    value="liten"
                     checked={this.state.size.includes("liten")}
                     onChange={this.handleChecked}
                   />
@@ -107,7 +109,7 @@ export default class StartPage extends React.Component {
                   <input
                     type="checkbox"
                     name="size"
-                    value="Mellan"
+                    value="mellan"
                     checked={this.state.size.includes("mellan")}
                     onChange={this.handleChecked}
                   />
@@ -115,7 +117,7 @@ export default class StartPage extends React.Component {
                   <input
                     type="checkbox"
                     name="size"
-                    value="Stor"
+                    value="stor"
                     checked={this.state.size.includes("stor")}
                     onChange={this.handleChecked}
                   />
@@ -192,7 +194,6 @@ export default class StartPage extends React.Component {
             })}
           </div>
         )}
-
       </div>
     )
   }
