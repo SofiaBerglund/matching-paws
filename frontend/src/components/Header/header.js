@@ -27,11 +27,11 @@ export default class Header extends React.Component {
               <div className="hamburger-bar3" />
             </label>
           </div>
-          <nav className="navbar-list">
-            <a className="link-item" href="#"> Om oss </a>
-            <a className="link-item" href="#"> Logga in </a>
-            <a className="link-item" href="#"> Kontakt </a>
-          </nav>
+          <ul className="navbar-list">
+            <li> Om oss </li>
+            <li> Logga in </li>
+            <li> Kontakt </li>
+          </ul>
         </header>
       </div>
     )

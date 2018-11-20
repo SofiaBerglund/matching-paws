@@ -20,7 +20,7 @@ export default class ResultPage extends React.Component {
             <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
             <Link to={`/results/${id}`}>
               <div className="submit-button">
-                <img src="./paw-print2.png" />
+                <img id="paw-print" src="./paw-print2.png" />
                 <input type="submit" value="Läs mer!" />
               </div>
             </Link>
