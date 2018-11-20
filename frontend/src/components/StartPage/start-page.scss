@@ -3,6 +3,7 @@ $fontStyle: 'KoHo', sans-serif;
 $paddingTen: 20px;
 $useFlex: flex;
 $backgroundImage: url('/dog-3.jpg');
+$backgroundColorOpacity: rgba(250, 250, 250, 0.6);
 
 .search-page-wrapper {
   background-image: $backgroundImage;
@@ -16,7 +17,7 @@ $backgroundImage: url('/dog-3.jpg');
   height: 120vh;
   display: $useFlex;
   flex-direction: column;
-  background-color: rgba(250, 250, 250, 0.6);
+  background-color: $backgroundColorOpacity;
   font-family: $fontStyle;
   text-align: center;
 }

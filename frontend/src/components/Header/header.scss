@@ -1,18 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=KoHo|Roboto');
 $fontStyle: 'KoHo', sans-serif;
 
+h1 {
+  text-align: center;
+}
+
 .header a {
   text-decoration: none;
   padding: 10px;
+  font-family: $fontStyle;
+  color: #000;
+  margin: 50px;
+  font-size: 20px;
 }
 
 .navbar-list {
   position: absolute;
   display: flex;
-  justify-content:space-between;
+  text-align: center;
   flex-flow: column;
   width: 100%;
   left: -100%;
+  background-color: #fff;
+  height: 100%;
+  z-index: 1;
+}
+
+.hamburger-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger-label {
+  padding: 20px;
 }
 
 .hamburger-checkbox:checked ~ .navbar-list {
@@ -20,13 +40,9 @@ $fontStyle: 'KoHo', sans-serif;
   transition: left 0.2s ease-out;
 }
 
-.hamburger-label {
-  padding: 20px;
-}
-
-.hamburger-bar1,
-.hamburger-bar2,
-.hamburger-bar3 {
+.hamburger-container .hamburger-bar1,
+.hamburger-container .hamburger-bar2,
+.hamburger-container .hamburger-bar3 {
   width: 35px;
   height: 5px;
   background-color: #000;
@@ -34,15 +50,15 @@ $fontStyle: 'KoHo', sans-serif;
   margin-left: 30px;
 }
 
-.hamburger-checkbox:checked ~ .hamburger-label .hamburger-bar1 {
+.hamburger-checkbox:checked ~ .hamburger-container .hamburger-label .hamburger-bar1 {
  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.hamburger-checkbox:checked ~ .hamburger-label .hamburger-bar2 {
+.hamburger-checkbox:checked ~ .hamburger-container .hamburger-label .hamburger-bar2 {
  opacity: 0;
 }
 
-.hamburger-checkbox:checked ~ .hamburger-label .hamburger-bar3 {
+.hamburger-checkbox:checked ~ .hamburger-container .hamburger-label .hamburger-bar3 {
  transform: rotate(45deg) translate(-8px, -8px);
 }
 
