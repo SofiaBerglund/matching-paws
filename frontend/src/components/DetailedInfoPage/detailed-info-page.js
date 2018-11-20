@@ -23,8 +23,7 @@ export default class DetailedInfoPage extends React.Component {
 
     return (
       <div>
-        <h1>Detaljerad information</h1>
-        <h2>{animalObject.name}</h2>
+        <h1>Det här är {animalObject.name}!</h1>
         <img src={animalObject.image} />
         <p>{animalObject.description}</p>
         <a href="mailto:intresseanmalan@matching-paws.com">Intresseanmälan</a>

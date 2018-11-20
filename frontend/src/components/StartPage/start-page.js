@@ -67,6 +67,10 @@ export default class StartPage extends React.Component {
       })
   }
 
+  handleOnClick = e => {
+    window.location.reload()
+  }
+
   render() {
     return (
       <div>
@@ -178,6 +182,13 @@ export default class StartPage extends React.Component {
         </div>
         {this.state.showResults && (
           <div className="matches-container">
+            <div className="submit-button" onClick={this.handleOnClick}>
+              <img id="paw-print" src="./paw-print2.png" />
+              <input value="Tillbaka till sök" />
+            </div>
+            {/* <div>
+              <button onClick={this.onClick}>Tillbaka till sök</button>
+            </div> */}
             <h1>Dina matchningar!</h1>
             {this.state.filteredSearch.animals.length === 0 ? (
               <p>Tyvärr hittar vi inga matchningar</p>
