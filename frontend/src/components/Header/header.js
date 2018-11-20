@@ -1,5 +1,6 @@
 import React from "react"
 import "./header.scss"
+import { Link } from "react-router-dom"
 
 export default class Header extends React.Component {
   state = {
@@ -29,9 +30,18 @@ export default class Header extends React.Component {
             </label>
           </div>
           <ul className="navbar-list">
-            <li> Om oss </li>
-            <li> Logga in </li>
-            <li> Kontakt </li>
+            <Link to="/">
+              <li> Hem </li>
+            </Link>
+            <Link to="/aboutus">
+              <li> Om oss </li>
+            </Link>
+            <Link to="/login">
+              <li> Logga in </li>
+            </Link>
+            <Link to="/contact">
+              <li> Kontakt </li>
+            </Link>
           </ul>
         </header>
       </div>
