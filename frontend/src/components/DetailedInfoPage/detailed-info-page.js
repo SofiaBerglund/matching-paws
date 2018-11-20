@@ -22,7 +22,7 @@ export default class DetailedInfoPage extends React.Component {
     })
 
     return (
-      <div>
+      <div className="detailed-info-wrapper">
         <h1>Det här är {animalObject.name}!</h1>
         <img src={animalObject.image} />
         <p>{animalObject.description}</p>
