@@ -169,7 +169,7 @@ export default class StartPage extends React.Component {
                   />
                 </div>
                 <div className="submit-button">
-                  <img src="./paw-print.png" />
+                  <img src="./paw-print2.png" />
                   <input type="submit" value="Hitta hund" />
                 </div>
               </form>
@@ -177,7 +177,7 @@ export default class StartPage extends React.Component {
           )}
         </div>
         {this.state.showResults && (
-          <div>
+          <div className="matches-container">
             <h1>Dina matchningar!</h1>
             {this.state.filteredSearch.animals.map(animal => {
               return (

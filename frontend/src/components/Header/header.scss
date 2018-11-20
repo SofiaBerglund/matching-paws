@@ -1,4 +1,51 @@
-.header {
-  text-align: center;
-  height: 100px;
+@import url('https://fonts.googleapis.com/css?family=KoHo|Roboto');
+$fontStyle: 'KoHo', sans-serif;
+
+.header a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-list {
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  flex-flow: column;
+  width: 100%;
+  left: -100%;
+}
+
+.hamburger-checkbox:checked ~ .navbar-list {
+  left:0;
+  transition: left 0.2s ease-out;
+}
+
+.hamburger-label {
+  padding: 20px;
+}
+
+.hamburger-bar1,
+.hamburger-bar2,
+.hamburger-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  margin: 6px 0;
+  margin-left: 30px;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-bar1 {
+ transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-bar2 {
+ opacity: 0;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-bar3 {
+ transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger-checkbox {
+  display: none;
 }
