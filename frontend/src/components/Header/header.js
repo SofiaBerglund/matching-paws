@@ -15,12 +15,12 @@ export default class Header extends React.Component {
     return (
       <div>
         <header className="header">
-          <h1>Header</h1>
-            <input
-              id="hamburger"
-              className="hamburger-checkbox"
-              type="checkbox" />
-              <div className="hamburger-container">
+          <h1>Matching Paws</h1>
+          <input
+            id="hamburger"
+            className="hamburger-checkbox"
+            type="checkbox" />
+          <div className="hamburger-container">
             <label htmlFor="hamburger" className="hamburger-label">
               <div className="hamburger-bar1" />
               <div className="hamburger-bar2" />
