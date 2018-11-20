@@ -2,7 +2,9 @@ import React from "react"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Header from "./Header/header"
 import StartPage from "./StartPage/start-page"
-import ResultPage from "./ResultPage/result-page"
+import AboutUs from "./AboutUs/aboutus"
+import Contact from "./Contact/contact"
+import LogIn from "./LogIn/login"
 import DetailedInfoPage from "./DetailedInfoPage/detailed-info-page"
 
 class App extends React.Component {
@@ -12,7 +14,9 @@ class App extends React.Component {
         <div className="App">
           <Header />
           <Route exact path="/" component={StartPage} />
-          {/* <Route exact path="/results" component={ResultPage} /> */}
+          <Route exact path="/aboutus" component={AboutUs} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/login" component={LogIn} />
           <Route exact path="/results/:id" component={DetailedInfoPage} />
         </div>
       </Router>

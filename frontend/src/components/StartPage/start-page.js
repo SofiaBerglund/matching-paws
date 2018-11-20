@@ -169,7 +169,7 @@ export default class StartPage extends React.Component {
                   />
                 </div>
                 <div className="submit-button">
-                  <img src="./paw-print2.png" />
+                  <img id="paw-print" src="./paw-print2.png" />
                   <input type="submit" value="Hitta hund" />
                 </div>
               </form>

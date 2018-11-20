@@ -3,18 +3,10 @@ $fontStyle: 'KoHo', sans-serif;
 
 h1 {
   text-align: center;
+  margin-bottom: 0;
 }
-
-.header a {
-  text-decoration: none;
-  padding: 10px;
-  font-family: $fontStyle;
-  color: #000;
-  margin: 50px;
-  font-size: 20px;
-}
-
-.navbar-list {
+ul {
+  list-style: none;
   position: absolute;
   display: flex;
   text-align: center;
@@ -24,6 +16,19 @@ h1 {
   background-color: #fff;
   height: 100%;
   z-index: 1;
+}
+
+.navbar-list {
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  padding: 10px;
+  font-family: $fontStyle;
+  color: #000;
+  margin: 50px;
+  font-size: 20px;
 }
 
 .hamburger-container {
