@@ -2,3 +2,15 @@ a {
   text-decoration: none;
   color: #000;
 }
+.detailed-info-wrapper {
+  background-color: #fbf4ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailed-info-wrapper img {
+  width: 40%;
+  height: auto;
+
+}
