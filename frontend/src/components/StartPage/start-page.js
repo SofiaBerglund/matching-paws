@@ -152,8 +152,9 @@ export default class StartPage extends React.Component {
                     onChange={this.handleChecked}
                   />
                 </div>
-                <h3>Måste kunna bo med katt:</h3>
+                <h3>Måste kunna bo med:</h3>
                 <div className="search-container-catOk">
+                  <label>Katt</label>
                   <input
                     type="checkbox"
                     name="catOk"
@@ -161,9 +162,7 @@ export default class StartPage extends React.Component {
                     checked={this.state.catOk === true}
                     onChange={this.handleCheckedOtherAnimal}
                   />
-                </div>
-                <h3>Måste kunna bo med hund:</h3>
-                <div className="search-container-dogOk">
+                  <label>Hund</label>
                   <input
                     type="checkbox"
                     name="dogOk"

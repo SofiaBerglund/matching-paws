@@ -1,5 +1,5 @@
 $fontStyle: 'KoHo', sans-serif;
-$paddingTen: 20px;
+$padding: 30px;
 $useFlex: flex;
 $backgroundImage: url('/dog-3.jpg');
 $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
@@ -34,9 +34,8 @@ h3 {
 .search-container-sex,
 .search-container-size,
 .search-container-age,
-.search-container-catOk,
-.search-container-dogOk  {
-  padding: $paddingTen;
+.search-container-catOk {
+  padding: $padding;
   font-size: 15px;
 
   input{
@@ -57,25 +56,28 @@ input[type=checkbox]
 }
 
 .submit-button {
-  margin: 0 auto;
+  margin: 20px auto 0;
   position: relative;
   width: 170px;
+  display: flex;
+  justify-content: center;
 }
 .submit-button input {
   -webkit-appearance: none;
-  padding: 12px 50px;
-  background-color: #ffeed6;
-  font-size: 15px;
+  padding: 20px 80px;
+  background-color: #2e2d2b;
+  color: #fff;
+  font-size: 20px;
   cursor: pointer;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 .submit-button #paw-print{
-  width: 25px;
+  width: 30px;
   position: absolute;
   top: 20%;
-  left: 10%;
+  right: 90%;
 }
-
 .matches-container {
   background-color: #fbf4ed;
 }
