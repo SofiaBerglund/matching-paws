@@ -3,6 +3,18 @@ import "./header.scss"
 import { Link } from "react-router-dom"
 
 export default class Header extends React.Component {
+  // state = {
+  //   isActive: false
+  // }
+
+  // toggleActive = () => {
+  //   const currentActiveState = this.state.isActive
+  //   this.setState({ isActive: !currentActiveState })
+  // }
+
+  handleOnClick = e => {
+    window.location.reload(true)
+  }
 
   render() {
     return (
@@ -23,16 +35,16 @@ export default class Header extends React.Component {
           </div>
           <ul className="navbar-list">
             <Link to="/">
-              <li> Hem </li>
+              <li onClick={this.handleOnClick}> Hem </li>
             </Link>
             <Link to="/aboutus">
-              <li> Om oss </li>
+              <li onClick={this.handleOnClick}> Om oss </li>
             </Link>
             <Link to="/login">
-              <li> Logga in </li>
+              <li onClick={this.handleOnClick}> Logga in </li>
             </Link>
             <Link to="/contact">
-              <li> Kontakt </li>
+              <li onClick={this.handleOnClick}> Kontakt </li>
             </Link>
           </ul>
         </header>
