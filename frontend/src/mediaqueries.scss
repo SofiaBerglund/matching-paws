@@ -5,7 +5,8 @@ $fontStyle: "KoHo", sans-serif;
     display: flex;
     justify-content: center;
   }
-  .search-container, .login-container {
+  .search-container,
+  .login-container {
     width: 40%;
     height: 100%;
     margin: 0 auto;
@@ -39,7 +40,17 @@ $fontStyle: "KoHo", sans-serif;
     margin: auto;
     border: none;
   }
+
+  .detailed-info-wrapper p {
+    padding: 2px 200px;
+    font-size: 20px;
+  }
+
+  .detailed-info-wrapper h3 {
+    font-size: 30px;
+  }
 }
+
 //
 // @media (min-width: 600px) and (max-width: 1200px) {
 //   .search-container {

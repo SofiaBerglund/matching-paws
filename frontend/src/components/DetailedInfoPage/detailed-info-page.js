@@ -33,7 +33,7 @@ export default class DetailedInfoPage extends React.Component {
           <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
           <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
           <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
-          <div className="submit-button">
+          <div className="interest-button">
             <img id="paw-print" src="./paw-print2.png" />
             <a href="mailto:intresseanmalan@matching-paws.com">
               Intresseanmälan

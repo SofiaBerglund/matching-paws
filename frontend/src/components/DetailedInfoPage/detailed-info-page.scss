@@ -14,3 +14,28 @@ a {
   margin: 4px 10px;
   padding: 2px;
 }
+
+.interest-button {
+  margin: 20px auto 0;
+  position: relative;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+}
+.interest-button input,
+.interest-button a {
+  -webkit-appearance: none;
+  padding: 20px 80px;
+  background-color: #2e2d2b;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.interest-button #paw-print {
+  width: 30px;
+  position: absolute;
+  top: 20%;
+  right: 107%;
+}
