@@ -3,26 +3,18 @@ import "./header.scss"
 import { Link } from "react-router-dom"
 
 export default class Header extends React.Component {
-  state = {
-    isActive: false
-  }
-
-  toggleActive = () => {
-    const currentActiveState = this.state.isActive
-    this.setState({ isActive: !currentActiveState })
-  }
 
   render() {
     return (
       <div>
         <header className="header">
-          <h1>Matching Paws</h1>
           <input
             id="hamburger"
             className="hamburger-checkbox"
             type="checkbox"
           />
           <div className="hamburger-container">
+            <h1>Matching Paws</h1>
             <label htmlFor="hamburger" className="hamburger-label">
               <div className="hamburger-bar1" />
               <div className="hamburger-bar2" />

@@ -1,7 +1,10 @@
 $fontStyle: 'KoHo', sans-serif;
 
 @media (min-width: 900px) {
-
+  .hamburger-container {
+    display: flex;
+    justify-content: center;
+  }
   .search-container {
     width: 40%;
     height: 100%;
@@ -21,7 +24,7 @@ $fontStyle: 'KoHo', sans-serif;
   .hamburger-label {
     display:none;
   }
-  .navbar-list {
+  ul {
     left:0;
     position: relative;
     display: flex;
@@ -30,8 +33,10 @@ $fontStyle: 'KoHo', sans-serif;
     height: 20px;
     padding: 60px;
   }
+
   li {
     margin: 0;
+    border: none;
   }
 }
 
