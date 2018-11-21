@@ -27,11 +27,13 @@ export default class Header extends React.Component {
           />
           <div className="hamburger-container">
             <h1>Matching Paws</h1>
-            <label htmlFor="hamburger" className="hamburger-label">
-              <div className="hamburger-bar1" />
-              <div className="hamburger-bar2" />
-              <div className="hamburger-bar3" />
-            </label>
+            <div className="hamburger-menu-wrapper">
+              <label htmlFor="hamburger" className="hamburger-label">
+                <div className="hamburger-bar1" />
+                <div className="hamburger-bar2" />
+                <div className="hamburger-bar3" />
+              </label>
+            </div>
           </div>
           <ul className="navbar-list">
             <Link to="/">

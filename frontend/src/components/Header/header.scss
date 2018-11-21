@@ -31,12 +31,13 @@ li {
 
 .hamburger-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
-.hamburger-label {
-  padding: 20px;
+.hamburger-menu-wrapper {
+  position: relative;
+  float: right;
 }
 
 .hamburger-checkbox:checked ~ .navbar-list {
@@ -50,7 +51,7 @@ li {
   width: 30px;
   height: 3px;
   background-color: #000;
-  margin: 6px 0;
+  margin: 6px;
 }
 
 .hamburger-checkbox:checked ~ .hamburger-container .hamburger-label .hamburger-bar1 {
