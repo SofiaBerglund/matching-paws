@@ -39,7 +39,7 @@ h3 {
   display: flex;
   padding: $padding;
   font-size: 15px;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 
   input {
@@ -93,6 +93,17 @@ input[type="checkbox"] {
 
 .matches-container {
   background-color: #fbf4ed;
+  padding-bottom: 50px;
+}
+
+.matches-container h1 {
+  background-color: #fbf4ed;
+  text-align: center;
+}
+
+.back-button {
+  cursor: pointer;
+  margin: 10px;
 }
 
 @import "../../mediaqueries.scss";

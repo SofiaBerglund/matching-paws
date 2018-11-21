@@ -189,26 +189,26 @@ export default class StartPage extends React.Component {
                   <div className="checkbox-container-wrapper">
                     <label>Katt</label>
                     <div className="checkbox-container">
-                    <input
-                      type="checkbox"
-                      name="catOk"
-                      value="yes"
-                      checked={this.state.catOk === true}
-                      onChange={this.handleCheckedOtherAnimal}
-                    />
+                      <input
+                        type="checkbox"
+                        name="catOk"
+                        value="yes"
+                        checked={this.state.catOk === true}
+                        onChange={this.handleCheckedOtherAnimal}
+                      />
                     </div>
-                    </div>
-                  <div className="checkbox-container-wrapper">
-                  <label>Hund</label>
-                  <div className="checkbox-container">
-                  <input
-                    type="checkbox"
-                    name="dogOk"
-                    value="yes"
-                    checked={this.state.dogOk === true}
-                    onChange={this.handleCheckedOtherAnimal}
-                  />
                   </div>
+                  <div className="checkbox-container-wrapper">
+                    <label>Hund</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="dogOk"
+                        value="yes"
+                        checked={this.state.dogOk === true}
+                        onChange={this.handleCheckedOtherAnimal}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="submit-button">
@@ -221,23 +221,22 @@ export default class StartPage extends React.Component {
         </div>
         {this.state.showResults && (
           <div className="matches-container">
-            <div className="submit-button" onClick={this.handleOnClick}>
-              <img id="paw-print" src="./paw-print2.png" />
-              <input type="submit" value="Tillbaka till sök" />
+            <div className="back-button" onClick={this.handleOnClick}>
+              <h3>Tillbaka till sök</h3>
             </div>
             <h1>Dina matchningar!</h1>
             {this.state.filteredSearch.animals.length === 0 ? (
               <p>Tyvärr hittar vi inga matchningar</p>
             ) : (
-              this.state.filteredSearch.animals.map(animal => {
+              this.state.filteredSearch.animals.map(item => {
                 return (
                   <ResultPage
-                    id={animal._id}
-                    name={animal.name}
-                    sex={animal.sex}
-                    size={animal.size}
-                    age={animal.age}
-                    image={animal.image}
+                    id={item._id}
+                    name={item.name}
+                    sex={item.sex}
+                    size={item.size}
+                    age={item.age}
+                    image={item.image}
                   />
                 )
               })
