@@ -28,6 +28,7 @@ h1 {
 
 h3 {
   margin: 0;
+  font-family: $fontStyle;
   font-size: 20px;
 }
 
@@ -72,7 +73,8 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
 }
-.submit-button input {
+.submit-button input,
+.submit-button a {
   -webkit-appearance: none;
   padding: 20px 80px;
   background-color: #2e2d2b;
@@ -89,8 +91,6 @@ input[type="checkbox"] {
   right: 90%;
 }
 
-.back-button {
-}
 .matches-container {
   background-color: #fbf4ed;
 }
