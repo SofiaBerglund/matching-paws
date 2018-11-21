@@ -31,24 +31,24 @@ $fontStyle: "KoHo", sans-serif;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    height: 20px;
-    padding: 60px;
+    height: auto;
+    padding: 0 20px;
+    width: 100%;
   }
-
   li {
-    margin: 0;
+    margin:auto;
     border: none;
   }
 }
-
-@media (min-width: 600px) and (max-width: 1200px) {
-  .search-container {
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 20px;
-  }
-  .submit-button img {
-    left: 10%;
-  }
-}
+//
+// @media (min-width: 600px) and (max-width: 1200px) {
+//   .search-container {
+//     width: 60%;
+//     height: auto;
+//     margin: 0 auto;
+//     border-radius: 20px;
+//   }
+//   .submit-button img{
+//     left: 10%;
+//   }
+// }
