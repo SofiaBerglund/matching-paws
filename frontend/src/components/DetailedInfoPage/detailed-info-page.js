@@ -21,12 +21,25 @@ export default class DetailedInfoPage extends React.Component {
       }
     })
 
+    const { name, sex, size, age, image, description } = animalObject
+
     return (
       <div className="detailed-info-wrapper">
-        <h1>Det här är {animalObject.name}!</h1>
-        <img src={animalObject.image} />
-        <p>{animalObject.description}</p>
-        <a href="mailto:intresseanmalan@matching-paws.com">Intresseanmälan</a>
+        <div className="detailed-info-container">
+          <h1>Det här är {name}!</h1>
+          <img src={image} />
+          <h3>{name} söker</h3>
+          <p>{description}</p>
+          <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
+          <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
+          <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
+          <div className="submit-button">
+            <img id="paw-print" src="./paw-print2.png" />
+            <a href="mailto:intresseanmalan@matching-paws.com">
+              Intresseanmälan
+            </a>
+          </div>
+        </div>
       </div>
     )
   }

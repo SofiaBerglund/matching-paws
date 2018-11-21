@@ -12,13 +12,13 @@ $fontStyle: "KoHo", sans-serif;
     border-radius: 20px;
   }
   .result-page-wrapper {
-    width: 70%;
+    width: 100%;
     padding: 0px 10px;
   }
   .submit-button {
     margin-top: 40px;
   }
-  .result-page-container img {
+  img {
     width: 30%;
   }
   .hamburger-label {
@@ -36,7 +36,7 @@ $fontStyle: "KoHo", sans-serif;
     width: 100%;
   }
   li {
-    margin:auto;
+    margin: auto;
     border: none;
   }
 }

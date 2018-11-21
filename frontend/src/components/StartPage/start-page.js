@@ -183,7 +183,7 @@ export default class StartPage extends React.Component {
           <div className="matches-container">
             <div className="submit-button" onClick={this.handleOnClick}>
               <img id="paw-print" src="./paw-print2.png" />
-              <input value="Tillbaka till sök" />
+              <input type="submit" value="Tillbaka till sök" />
             </div>
             <h1>Dina matchningar!</h1>
             {this.state.filteredSearch.animals.length === 0 ? (
