@@ -40,6 +40,14 @@ $fontStyle: "KoHo", sans-serif;
     margin: auto;
     border: none;
   }
+  .matches-container {
+    width: 50%;
+    padding:0;
+    margin: 0;
+  }
+  .result-page-wrapper {
+
+  }
 
   .detailed-info-wrapper p {
     padding: 2px 200px;
@@ -48,9 +56,6 @@ $fontStyle: "KoHo", sans-serif;
 
   .detailed-info-wrapper h3 {
     font-size: 30px;
-  }
-  .detailed-info-container {
-    width: 100%;
   }
 }
 
