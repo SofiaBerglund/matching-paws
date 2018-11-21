@@ -3,4 +3,10 @@ img {
   height: auto;
 }
 
+.result-page-container {
+  margin: 4px 10px;
+  padding: 2px;
+  border-bottom: 1px solid black;
+}
+
 @import "../../mediaqueries.scss";

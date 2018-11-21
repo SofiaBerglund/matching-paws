@@ -1,4 +1,4 @@
-$fontStyle: 'KoHo', sans-serif;
+$fontStyle: "KoHo", sans-serif;
 
 @media (min-width: 900px) {
   .hamburger-container {
@@ -22,12 +22,13 @@ $fontStyle: 'KoHo', sans-serif;
     width: 30%;
   }
   .hamburger-label {
-    display:none;
+    display: none;
   }
-  .header ul{
-    left:0;
-    position: absolute;
-    display:flex;
+
+  ul {
+    left: 0;
+    position: relative;
+    display: flex;
     flex-flow: row;
     justify-content: flex-end;
     height: auto;

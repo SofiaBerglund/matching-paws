@@ -185,9 +185,6 @@ export default class StartPage extends React.Component {
               <img id="paw-print" src="./paw-print2.png" />
               <input value="Tillbaka till sök" />
             </div>
-            {/* <div>
-              <button onClick={this.onClick}>Tillbaka till sök</button>
-            </div> */}
             <h1>Dina matchningar!</h1>
             {this.state.filteredSearch.animals.length === 0 ? (
               <p>Tyvärr hittar vi inga matchningar</p>
