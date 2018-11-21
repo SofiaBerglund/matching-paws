@@ -81,88 +81,126 @@ export default class StartPage extends React.Component {
               <form className="myForm3" onSubmit={this.findAnimals}>
                 <h3>Kön:</h3>
                 <div className="search-container-sex">
-                  <label>Tik</label>
-                  <input
-                    type="checkbox"
-                    name="sex"
-                    value="tik"
-                    checked={this.state.sex.includes("tik")}
-                    onChange={this.handleChecked}
-                  />
-                  <label>Hane</label>
-                  <input
-                    type="checkbox"
-                    name="sex"
-                    value="hane"
-                    checked={this.state.sex.includes("hane")}
-                    onChange={this.handleChecked}
-                  />
+                  <div className="checkbox-container-wrapper">
+                    <label>Tik</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="sex"
+                        value="tik"
+                        checked={this.state.sex.includes("tik")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
+                  <div className="checkbox-container-wrapper">
+                    <label>Hane</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="sex"
+                        value="hane"
+                        checked={this.state.sex.includes("hane")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <h3>Storlek:</h3>
                 <div className="search-container-size">
-                  <label>Liten</label>
-                  <input
-                    type="checkbox"
-                    name="size"
-                    value="liten"
-                    checked={this.state.size.includes("liten")}
-                    onChange={this.handleChecked}
-                  />
-                  <label>Mellan</label>
-                  <input
-                    type="checkbox"
-                    name="size"
-                    value="mellan"
-                    checked={this.state.size.includes("mellan")}
-                    onChange={this.handleChecked}
-                  />
-                  <label>Stor</label>
-                  <input
-                    type="checkbox"
-                    name="size"
-                    value="stor"
-                    checked={this.state.size.includes("stor")}
-                    onChange={this.handleChecked}
-                  />
+                  <div className="checkbox-container-wrapper">
+                    <label>Liten</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="size"
+                        value="liten"
+                        checked={this.state.size.includes("liten")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
+                  <div className="checkbox-container-wrapper">
+                    <label>Mellan</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="size"
+                        value="mellan"
+                        checked={this.state.size.includes("mellan")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
+                  <div className="checkbox-container-wrapper">
+                    <label>Stor</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="size"
+                        value="stor"
+                        checked={this.state.size.includes("stor")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <h3>Ålder:</h3>
                 <div className="search-container-age">
-                  <label>0-3 år</label>
-                  <input
-                    type="checkbox"
-                    name="age"
-                    value="0-3 år"
-                    checked={this.state.age.includes("0-3 år")}
-                    onChange={this.handleChecked}
-                  />
-                  <label>4-6 år</label>
-                  <input
-                    type="checkbox"
-                    name="age"
-                    value="4-6 år"
-                    checked={this.state.age.includes("4-6 år")}
-                    onChange={this.handleChecked}
-                  />
-                  <label>6+ år</label>
-                  <input
-                    type="checkbox"
-                    name="age"
-                    value="6+ år"
-                    checked={this.state.age.includes("6+ år")}
-                    onChange={this.handleChecked}
-                  />
+                  <div className="checkbox-container-wrapper">
+                    <label>0-3 år</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="age"
+                        value="0-3 år"
+                        checked={this.state.age.includes("0-3 år")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
+                  <div className="checkbox-container-wrapper">
+                    <label>4-6 år</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="age"
+                        value="4-6 år"
+                        checked={this.state.age.includes("4-6 år")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
+                  <div className="checkbox-container-wrapper">
+                    <label>6+ år</label>
+                    <div className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        name="age"
+                        value="6+ år"
+                        checked={this.state.age.includes("6+ år")}
+                        onChange={this.handleChecked}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <h3>Måste kunna bo med:</h3>
                 <div className="search-container-catOk">
-                  <label>Katt</label>
-                  <input
-                    type="checkbox"
-                    name="catOk"
-                    value="yes"
-                    checked={this.state.catOk === true}
-                    onChange={this.handleCheckedOtherAnimal}
-                  />
+                  <div className="checkbox-container-wrapper">
+                    <label>Katt</label>
+                    <div className="checkbox-container">
+                    <input
+                      type="checkbox"
+                      name="catOk"
+                      value="yes"
+                      checked={this.state.catOk === true}
+                      onChange={this.handleCheckedOtherAnimal}
+                    />
+                    </div>
+                    </div>
+                  <div className="checkbox-container-wrapper">
                   <label>Hund</label>
+                  <div className="checkbox-container">
                   <input
                     type="checkbox"
                     name="dogOk"
@@ -170,6 +208,8 @@ export default class StartPage extends React.Component {
                     checked={this.state.dogOk === true}
                     onChange={this.handleCheckedOtherAnimal}
                   />
+                  </div>
+                  </div>
                 </div>
                 <div className="submit-button">
                   <img id="paw-print" src="./paw-print2.png" />
