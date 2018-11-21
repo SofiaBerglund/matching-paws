@@ -3,15 +3,6 @@ import "./header.scss"
 import { Link } from "react-router-dom"
 
 export default class Header extends React.Component {
-  // state = {
-  //   isActive: false
-  // }
-
-  // toggleActive = () => {
-  //   const currentActiveState = this.state.isActive
-  //   this.setState({ isActive: !currentActiveState })
-  // }
-
   handleOnClick = e => {
     window.location.reload(true)
   }
