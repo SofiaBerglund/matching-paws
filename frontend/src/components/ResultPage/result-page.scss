@@ -9,27 +9,4 @@ img {
   border-bottom: 1px solid black;
 }
 
-.back-button {
-  margin: 0 auto;
-  position: relative;
-  width: 170px;
-}
-.back-button input {
-  -webkit-appearance: none;
-  padding: 12px 50px;
-  background-color: #ffeed6;
-  font-size: 15px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-.back-button #paw-print {
-  width: 25px;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-}
-
-.submit-button #paw-print-results {
-}
-
 @import "../../mediaqueries.scss";

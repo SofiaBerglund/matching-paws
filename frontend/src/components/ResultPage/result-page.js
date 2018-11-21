@@ -19,7 +19,7 @@ export default class ResultPage extends React.Component {
               <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
               <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
               <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
-              <div className="back-button">
+              <div className="submit-button">
                 <img id="paw-print" src="./paw-print2.png" />
                 <input type="submit" value="Läs mer!" />
               </div>

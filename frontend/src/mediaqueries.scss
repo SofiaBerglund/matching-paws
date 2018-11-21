@@ -1,4 +1,4 @@
-$fontStyle: 'KoHo', sans-serif;
+$fontStyle: "KoHo", sans-serif;
 
 @media (min-width: 900px) {
   .hamburger-container {
@@ -22,10 +22,11 @@ $fontStyle: 'KoHo', sans-serif;
     width: 30%;
   }
   .hamburger-label {
-    display:none;
+    display: none;
   }
+
   ul {
-    left:0;
+    left: 0;
     position: relative;
     display: flex;
     flex-flow: row;
@@ -47,7 +48,7 @@ $fontStyle: 'KoHo', sans-serif;
     margin: 0 auto;
     border-radius: 20px;
   }
-  .submit-button img{
+  .submit-button img {
     left: 10%;
   }
 }

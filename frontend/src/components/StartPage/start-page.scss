@@ -1,7 +1,7 @@
-$fontStyle: 'KoHo', sans-serif;
+$fontStyle: "KoHo", sans-serif;
 $padding: 30px;
 $useFlex: flex;
-$backgroundImage: url('/dog-3.jpg');
+$backgroundImage: url("/dog-3.jpg");
 $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
 
 .search-page-wrapper {
@@ -21,7 +21,7 @@ $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
   text-align: center;
 }
 
-h1{
+h1 {
   font-family: $fontStyle;
   margin-bottom: 15px;
 }
@@ -38,7 +38,7 @@ h3 {
   padding: $padding;
   font-size: 15px;
 
-  input{
+  input {
     margin-left: 20px;
   }
   label {
@@ -46,8 +46,7 @@ h3 {
   }
 }
 
-input[type=checkbox]
-{
+input[type="checkbox"] {
   -ms-transform: scale(1.5); /* IE */
   -moz-transform: scale(1.5); /* FF */
   -webkit-transform: scale(1.5); /* Safari and Chrome */
@@ -72,11 +71,14 @@ input[type=checkbox]
   margin-bottom: 20px;
   border-radius: 10px;
 }
-.submit-button #paw-print{
+.submit-button #paw-print {
   width: 30px;
   position: absolute;
   top: 20%;
   right: 90%;
+}
+
+.back-button {
 }
 .matches-container {
   background-color: #fbf4ed;
