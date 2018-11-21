@@ -1,0 +1,23 @@
+$backgroundImage: url("/dog-3.jpg");
+$useFlex: flex;
+$fontStyle: "KoHo", sans-serif;
+$backgroundColorOpacity: rgba(250, 250, 250, 0.6);
+
+.login-wrapper {
+  background-image: $backgroundImage;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.login-container {
+  width: 100%;
+  height: 120vh;
+  display: $useFlex;
+  flex-direction: column;
+  background-color: $backgroundColorOpacity;
+  font-family: $fontStyle;
+  text-align: center;
+}
+
+@import "../../mediaqueries.scss";
