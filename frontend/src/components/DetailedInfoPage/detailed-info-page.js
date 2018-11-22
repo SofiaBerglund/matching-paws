@@ -7,9 +7,12 @@ export default class DetailedInfoPage extends React.Component {
   }
 
   componentDidMount() {
-    const details = `http://localhost:8080/animals/${
-      this.props.match.params.id
-    }`
+    const details =
+      process.env.NODE_ENV === "production"
+        ? `https://matching-paws.herokuapp.com/animals/${
+            this.props.match.params.id
+          }`
+        : `http://localhost:8080/animals/${this.props.match.params.id}`
     fetch(details)
       .then(response => {
         console.log(response)

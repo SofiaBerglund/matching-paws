@@ -224,7 +224,6 @@ export default class StartPage extends React.Component {
               </Link>
             </form>
           </div>
-          )}
         </div>
       </div>
     )

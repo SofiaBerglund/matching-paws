@@ -60,15 +60,15 @@ export default class ResultPage extends React.Component {
                         <img src={item.image} alt="" />
                       </div>
                       <p>
-                        Kön:
+                        Kön:{" "}
                         {item.sex.charAt(0).toUpperCase() + item.sex.slice(1)}
                       </p>
                       <p>
-                        Storlek:
+                        Storlek:{" "}
                         {item.size.charAt(0).toUpperCase() + item.size.slice(1)}
                       </p>
                       <p>
-                        Ålder:
+                        Ålder:{" "}
                         {item.age.charAt(0).toUpperCase() + item.age.slice(1)}
                       </p>
                       <div className="submit-button">
