@@ -41,9 +41,12 @@ $fontStyle: "KoHo", sans-serif;
     border: none;
   }
 
+  p {
+    font-size: 20px;
+  }
+
   .detailed-info-wrapper p {
     padding: 2px 200px;
-    font-size: 20px;
   }
 
   .detailed-info-wrapper h3 {
