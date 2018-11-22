@@ -1,9 +1,5 @@
 import React from "react"
 import "./detailed-info-page.scss"
-const filteredAnimals =
-  process.env.NODE_ENV === "production"
-    ? "https://matching-paws.herokuapp.com/animals/"
-    : "http://localhost:8080/animals/"
 
 export default class DetailedInfoPage extends React.Component {
   state = {
@@ -30,7 +26,6 @@ export default class DetailedInfoPage extends React.Component {
     if (!this.state.detailedInfo) {
       return <div> loading</div>
     }
-
     const { name, sex, size, age, image, description } = this.state.detailedInfo
     return (
       <div className="detailed-info-wrapper">

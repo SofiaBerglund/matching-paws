@@ -86,7 +86,6 @@ app.post("/animals", (req, res) => {
     })
     .catch(err => {
       res.status(400).send(err)
-      // test
     })
 })
 
