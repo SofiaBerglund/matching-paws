@@ -24,7 +24,7 @@ export default class DetailedInfoPage extends React.Component {
 
   render() {
     if (!this.state.detailedInfo) {
-      return <div> loading</div>
+      return <div>loading...</div>
     }
     const { name, sex, size, age, image, description } = this.state.detailedInfo
     return (

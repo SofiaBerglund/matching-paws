@@ -41,7 +41,7 @@ export default class ResultPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="matches-container">
         {this.state.searchResults.length === 0 ? (
           <p>Tyvärr hittar vi inga matchningar</p>
         ) : (
@@ -80,26 +80,3 @@ export default class ResultPage extends React.Component {
     )
   }
 }
-//   render() {
-//     const { name, image, sex, size, age, id } = this.props
-//     return (
-//       <div className="result-page-wrapper">
-//         <div className="result-page-container">
-//           <Link to={`/results/${id}`}>
-//             <h2>{name}</h2>
-//             <div className="image-container">
-//               <img src={image} alt="" />
-//             </div>
-//             <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
-//             <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
-//             <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
-//             <div className="submit-button">
-//               <img id="paw-print" src="./vit-tass.png" alt="" />
-//               <input type="submit" value="Läs mer!" />
-//             </div>
-//           </Link>
-//         </div>
-//       </div>
-//     )
-//   }
-//
