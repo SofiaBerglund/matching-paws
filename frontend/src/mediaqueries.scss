@@ -14,16 +14,12 @@ $fontStyle: "KoHo", sans-serif;
     border-radius: 20px;
   }
   .result-page-wrapper {
-<<<<<<< HEAD
-    width: 100%;
-=======
     width: calc(50% - 40px);
     padding: 0px 10px;
->>>>>>> 53cee669216cc36c11cbc1aeeba87cc09f0ff26f
   }
 
   .result-page-container {
-    margin: 4px 10px;
+    margin: 0 10px;
     padding: 2px 0 50px;
     border-bottom: 1px solid black;
     text-align: center;
@@ -33,8 +29,14 @@ $fontStyle: "KoHo", sans-serif;
     margin-top: 40px;
   }
 
-  img {
-    width: 30%;
+  .image-container {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 60%;
+    object-fit: contain;
   }
 
   .hamburger-label {
@@ -62,6 +64,7 @@ $fontStyle: "KoHo", sans-serif;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
   }
 
   p {

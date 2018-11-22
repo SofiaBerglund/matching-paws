@@ -14,7 +14,9 @@ export default class ResultPage extends React.Component {
         <div className="result-page-container">
           <Link to={`/results/${id}`}>
             <h2>{name}</h2>
-            <img src={image} alt="" />
+            <div className="image-container">
+              <img src={image} alt="" />
+            </div>
             <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
             <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
             <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>

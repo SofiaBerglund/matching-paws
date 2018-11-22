@@ -1,5 +1,5 @@
 $fontStyle: "KoHo", sans-serif;
-$fontStyleHeader: 'Montserrat', sans-serif;
+$fontStyleHeader: "Montserrat", sans-serif;
 
 .header {
   padding-bottom: 30px;
@@ -7,13 +7,9 @@ $fontStyleHeader: 'Montserrat', sans-serif;
 
 .header h1 {
   text-align: center;
-<<<<<<< HEAD
   margin: 30px 0 20px 20px;
   font-family: $fontStyleHeader;
   text-transform: uppercase;
-=======
-  margin: 10px 0 30px 20px;
->>>>>>> 53cee669216cc36c11cbc1aeeba87cc09f0ff26f
 }
 ul {
   list-style: none;
@@ -88,5 +84,5 @@ li {
 }
 
 #home-link {
-  color: #D5587F;
+  color: #d5587f;
 }
