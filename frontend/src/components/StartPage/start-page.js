@@ -67,6 +67,15 @@ export default class StartPage extends React.Component {
       })
   }
 
+  handleSubmit = e => {
+    e.preventDefault()
+    this.props.history.push(
+      `/results?sex=${this.state.sex}&age=${this.state.age}&size=${
+        this.state.size
+      }&catOK=${this.state.catOk}&dogOk=${this.state.dogOk}`
+    )
+  }
+
   handleOnClick = e => {
     window.location.reload()
   }
@@ -78,7 +87,7 @@ export default class StartPage extends React.Component {
           {this.state.show && (
             <div className="search-container">
               <h1>Sök hund</h1>
-              <form className="myForm3" onSubmit={this.findAnimals}>
+              <form className="myForm3" onSubmit={this.handleSubmit}>
                 <h3>Kön:</h3>
                 <div className="search-container-sex">
                   <div className="checkbox-container-wrapper">
