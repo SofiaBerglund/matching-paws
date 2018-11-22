@@ -59,6 +59,7 @@ $fontStyle: "KoHo", sans-serif;
     height: auto;
     padding: 0 20px;
     width: 100%;
+    margin:0;
   }
 
   li {
@@ -88,6 +89,13 @@ $fontStyle: "KoHo", sans-serif;
   .detailed-info-wrapper h3 {
     font-size: 30px;
   }
+  .contact-container {
+  bottom: -20%;
+ }
+ .aboutus-container p {
+   line-height: 30px;
+   margin: 0 30px;
+ }
 }
 
 //

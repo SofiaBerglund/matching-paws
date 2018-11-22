@@ -1,5 +1,6 @@
 import React from "react"
 import "./detailed-info-page.scss"
+import { Link } from "react-router-dom"
 
 export default class DetailedInfoPage extends React.Component {
   state = {
@@ -25,6 +26,11 @@ export default class DetailedInfoPage extends React.Component {
 
     return (
       <div className="detailed-info-wrapper">
+        <Link to={`/results/`}>
+          <div className="back-button" onClick={this.handleOnClick}>
+            <h3>Tillbaka till resultat</h3>
+          </div>
+        </Link>
         <div className="detailed-info-container">
           <h1>Det här är {name}!</h1>
           <img src={image} alt="" />
