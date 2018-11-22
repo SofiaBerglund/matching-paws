@@ -160,70 +160,123 @@
   "image": "https://hundstallet.se/hundarna/hundar-for-omplacering-stockholm/fanny/",
   "description": "Till rara Fanny söker vi en kärleksfull och hundvan familj utan annan hund. Hon vill komma till ett aktivt hem som gillar att gå långa promenader i skog och mark. Familjen hon söker bor i ett lugnt område, gärna lantligt till. Hennes nya hem tycker även att det är kul att hitta på aktiviteter med sin hund. Varför inte Nosework, lydnad eller någon annan rolig hundsport? Utöver aktivering står närhet högt upp på hennes önskelista. Hennes nya familj måste därför ha plats i både soffa och säng för denna rara tjej. Om du vinner Fannys hjärta kommer du att få den finaste följeslagaren livet ut. Hon är ljuvlig!"
 }
+{
+  "name": "Minnie",
+  "sex": "tik",
+  "size": "stor",
+  "age": "0-3 år",
+  "catOk": true,
+  "dogOk": true,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/11/minnie_13-298x300.jpg",
+  "description": "Till denna underbara tjej söker vi ett lantligt och tryggt hem. Vi känner att hon inte skulle trivas som ensamhund så ett stort plus – eller kanske till och med ett krav – är att man har en annan trygg hund i familjen som hon kan luta sig mot. Minnie är en urgosig tjej som vill ha sällskap. Du kanske jobbar hemma eller har en lugn arbetsplats dit hon kan följa med? Hemmet vi söker ska vara barnfritt eller ha större barn – stoj och stim är nämligen inget Minnie uppskattar. Det perfekta hemmet går långa härliga promenader, är intresserade av pälsvård samt är mjuka i sitt sätt med hund. Minnie kommer verkligen att göra en lycklig familj fulländad."
+}
+{
+  "name": "Tessie",
+  "sex": "tik",
+  "size": "stor",
+  "age": "0-3 år",
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundstallet.se/wp-content/uploads/2018/11/tessie-255x300.jpg",
+  "description": "Tessie söker ett aktivt hem med tidigare hundvana. Hon är en storvuxen och stark tik, och det krävs att man själv är stark och lugn och orkar hålla i henne. Hennes nya hem jobbar aktivt med sin hund och tränar med mjuka metoder – hon behöver både fysisk och psykisk stimulans (som vilken bruksras som helst) för att må bra. Tessies nya familj bor i hus och låter henne följa på det mesta. Hon är en oslipad diamant med ett stabilt psyke och härlig personlighet. Med henne i din närhet kommer du aldrig få en tråkig stund, hon är verkligen en pärla!"
+}
 ---------------
 
 Hundar utan hem:
 
 {
-  "name": "Flash",
+  "name": "Nancy",
   "sex": "tik",
   "size": "stor",
-  "age": 7,
-  "catOk": false,
-  "dogOk": true,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Flah-1622_004.jpg"
-}
-{
-  "name": "Jojo",
-  "sex": "tik",
-  "size": "mellan",
-  "age": 3,
+  "age": "4-6 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Jojo-1632_001.jpg"
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Nancy_1655-3.jpeg",
+  "description":"Till Nancy söker vi ett hem i ett lugnare område eller på landsbygden med människor som har hundvana sedan tidigare. Hon är ännu inte testad med katter och barn men informationen uppdateras löpande. Nancy vill inte vänta på ett hem längre utan är mer än redo att verkligen få slå sig till ro i en familj. Skicka in en intresseanmälan om hon är hunden för dig!"
 }
 {
-  "name": "Billy",
+  "name": "Bosse",
   "sex": "hane",
   "size": "liten",
-  "age": 1,
+  "age": "0-3 år",
   "catOk": true,
   "dogOk": true,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/Billy-1530_001.jpg"
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Bosse-1737_004.jpg",
+  "description":"Då Bosse kan vara lite blyg och osäker i nya situationer eller möten bör hans blivande familj ha viss hundvana så att de kan ge honom den trygghet han behöver. Han kan bo med katt, men eventuella barn bör vara lite äldre. Bosse vill helst inte bo mitt i en stadsmiljö, utan har de helst lite lugnare omkring sig. Bosse är opererad för en patella. Har ni ett tryggt och kärleksfullt hem till lilla Bosse, tveka då inte att skicka in en intresseanmälan!"
 }
 {
-  "name": "Gizmo",
+  "name": "Buster",
   "sex": "hane",
-  "size": "liten",
-  "age": 5,
+  "size": "mellan",
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": true,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/03/gismo-475_250.jpg"
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Buster-1647_002.jpg",
+  "description":"Buster är en 1-årig vinthundsblandning som hittades övergiven på gatan.  Nu sitter han på ett hundpensionat på Irland i väntan på sitt föralltidhem. Buster är verkligen jättesnäll och blir alltid glad över att få umgås med människor. Han kommer också mycket bra överens med andra hundar och älskar att leka. Buster är lätt att hantera och har bra inkallning. Han kan bo med barn, men inte med katt.
+
+Buster kan bo i de flesta miljöer så länge han får springa av sig regelbundet varvat med mycket kärlek och gos i soffan."
 }
 {
-  "name": "Tia",
+  "name": "Athena",
   "sex": "tik",
   "size": "mellan",
-  "age": 3,
+  "age": "6+ år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/09/tia_1362_250.jpeg"
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/athena_001.jpg",
+  "description":"Hon är en mjuk och trevlig tjej som vill bo i ett hundvant hem. För Athenas skull spelar det ingen roll om hon bor centralt eller i ett lugnare område. Hon kan troligtvis bo med en snäll hanhund men hon ska inte bo med katt. Athena skulle nog trivas bäst att bo med barn i tonåren som kan ge henne det utrymme hon behöver. Hon är väldigt snäll mot allt och alla, en riktig toppentjej!"
 }
 {
-  "name": "Ingrid",
-  "sex": "tik",
-  "size": "liten",
-  "age": 8,
-  "catOk": true,
+  "name": "Loco",
+  "sex": "hane",
+  "size": "stor",
+  "age": "4-6 år",
+  "catOk": false,
   "dogOk": false,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/ingrid_1507_250.jpg"
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Loco-1607_003.jpg",
+  "description":"Jag älskar att springa, cykla och att vara ute i skogen om dagarna. När jag är inomhus tycker jag om att sova överallt. Jag älskar godis, hundben och även lite människomat kan smyga ner ibland om jag får. Jag vill gärna komma till en familj som kommer ge mig kärlek den kärlek jag behöver,  jag skulle helst vilja bo ute på landet men jag klarar av stan också men inte alla dagar i veckan. När jag är utomhus vill jag gärna leka med bollar  och springa mycket. I min förra familj fick jag även följa med på cykelturer, det tycker jag är ett bra sätt att få ut lite energi på. "
 }
 {
-  "name": "Stripey",
+  "name": "Noah",
   "sex": "hane",
   "size": "mellan",
-  "age": 6,
+  "age": "0-3 år",
   "catOk": false,
   "dogOk": false,
-  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/Stripey-1399-11.jpg"
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/noah_1565_250.jpeg",
+  "description":"Till Noah söker vi ett hundvant hem i ett lugnare område, gärna ute på landet. Han har mycket energi kommer behöva en hel del motion och skulle nog älska att gå långa sköna skogspromenader och behöver få jobba med huvudet på något vis för att må bra. Han kan bo med barn, men ska kanske inte bo med de allra minsta barnen."
+}
+{
+  "name": "Malte",
+  "sex": "hane",
+  "size": "mellan",
+  "age": "0-3 år",
+  "catOk": true,
+  "dogOk": true,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/09/malte_868_250.jpeg",
+  "description":"Malte söker ett hem på landet eller i ett lugnt område som inte är stadsmiljö. Malte kan troligtvis dela hem med annan trygg hund, men skulle vara lika nöjd med bara sina människor som sällskap.
+Och eftersom Malte är en väldigt smart och intelligent hund som älskar att träna och samarbeta med dig, söker han någon som vill träna aktivt med Malte.
+Malte har hälsat på jourhemmets katter och har stor respekt för dem.
+Känner du att du har kunskapen och viljan att träna med Malte? Hör av dig!"
+}
+{
+  "name": "Wilda",
+  "sex": "tik",
+  "size": "mellan",
+  "age": "0-3 år",
+  "catOk": false,
+  "dogOk": false,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/10/Stripey-1399-11.jpg",
+  "description": "Wilda behöver en lugn och trygg ledare som är tydlig i sitt vägledande, då är hon världens följsammaste hund. Wilda är en känslig och väldigt mjuk individ som pga sin tuffa start i livet också bär på endel osäkerhet. Hon kan ha lite svårt att lita på människor, främst kvinnor, men när man vunnit hennes tillit så har man den trognaste följeslagare man kan tänka sig, som gärna sitter i knät och överöser en med kärlek eller sover under täcket tillsammans med dig."
+}
+{
+  "name": "Marley",
+  "sex": "hane",
+  "size": "liten",
+  "age": "6+ år",
+  "catOk": true,
+  "dogOk": true,
+  "image": "https://hundarutanhem.se/wp-content/uploads/2018/11/Marley-1644_001.jpg",
+  "description": "
+Marley är social med både människor och djur, han bor i dagsläget som ensamhund men skulle gärna bo med en annan snäll hund eller katt. Marley kan skälla och vifta på svansen när han ser någon på långt håll, men slutar så fort han har fått hälsa. Han kan vara ensam i några timmar i nuvarande hem utan problem, men kommer behöva få landa i sin nya familj innan han vill bli lämnad. Marley söker en tillvaro med härliga promenader, hjärngympa, mycket sällskap och mys, han är van att få sova både i soffa och säng och vill fortsätta med det."
 }
