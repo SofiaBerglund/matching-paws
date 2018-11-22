@@ -39,6 +39,16 @@ export default class ResultPage extends React.Component {
       })
   }
 
+  displayAge = age => {
+    if (age === "0-3") {
+      return "0-3 år"
+    } else if (age === "4-6") {
+      return "4-6 år"
+    } else if (age === "6") {
+      return "6+ år"
+    }
+  }
+
   render() {
     return (
       <div>
@@ -67,10 +77,7 @@ export default class ResultPage extends React.Component {
                         Storlek:{" "}
                         {item.size.charAt(0).toUpperCase() + item.size.slice(1)}
                       </p>
-                      <p>
-                        Ålder:{" "}
-                        {item.age.charAt(0).toUpperCase() + item.age.slice(1)}
-                      </p>
+                      <p>Ålder: {this.displayAge(item.age)}</p>
                       <div className="submit-button">
                         <img id="paw-print" src="./vit-tass.png" alt="" />
                         <input type="submit" value="Läs mer!" />

@@ -153,8 +153,8 @@ export default class StartPage extends React.Component {
                     <input
                       type="checkbox"
                       name="age"
-                      value="0-3 år"
-                      checked={this.state.age.includes("0-3 år")}
+                      value="0-3"
+                      checked={this.state.age.includes("0-3")}
                       onChange={this.handleChecked}
                     />
                   </div>
@@ -165,8 +165,8 @@ export default class StartPage extends React.Component {
                     <input
                       type="checkbox"
                       name="age"
-                      value="4-6 år"
-                      checked={this.state.age.includes("4-6 år")}
+                      value="4-6"
+                      checked={this.state.age.includes("4-6")}
                       onChange={this.handleChecked}
                     />
                   </div>
@@ -177,8 +177,8 @@ export default class StartPage extends React.Component {
                     <input
                       type="checkbox"
                       name="age"
-                      value="6+ år"
-                      checked={this.state.age.includes("6+ år")}
+                      value="6"
+                      checked={this.state.age.includes("6")}
                       onChange={this.handleChecked}
                     />
                   </div>
