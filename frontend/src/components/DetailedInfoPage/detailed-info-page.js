@@ -1,6 +1,5 @@
 import React from "react"
 import "./detailed-info-page.scss"
-import { Link } from "react-router-dom"
 
 export default class DetailedInfoPage extends React.Component {
   state = {
