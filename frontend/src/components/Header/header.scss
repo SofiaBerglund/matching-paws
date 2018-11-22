@@ -1,11 +1,19 @@
 $fontStyle: "KoHo", sans-serif;
 $fontStyleHeader: 'Montserrat', sans-serif;
 
+.header {
+  padding-bottom: 30px;
+}
+
 .header h1 {
   text-align: center;
+<<<<<<< HEAD
   margin: 30px 0 20px 20px;
   font-family: $fontStyleHeader;
   text-transform: uppercase;
+=======
+  margin: 10px 0 30px 20px;
+>>>>>>> 53cee669216cc36c11cbc1aeeba87cc09f0ff26f
 }
 ul {
   list-style: none;
@@ -16,7 +24,7 @@ ul {
   width: 80%;
   left: -100%;
   background-color: #fff;
-  height: 80%;
+  height: 60%;
   z-index: 1;
   margin: 0;
 }

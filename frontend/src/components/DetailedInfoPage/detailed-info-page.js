@@ -21,20 +21,20 @@ export default class DetailedInfoPage extends React.Component {
       }
     })
 
-    const { sex, size, age, image } = animalObject
+    const { name, sex, size, age, image, description } = animalObject
 
     return (
       <div className="detailed-info-wrapper">
         <div className="detailed-info-container">
-          <h1>Det här är {animalObject.name}!</h1>
-          <img src={image} />
-          <h3>{animalObject.name} söker</h3>
-          <p>{animalObject.description}</p>
+          <h1>Det här är {name}!</h1>
+          <img src={image} alt="" />
+          <h3>{name} söker</h3>
+          <p>{description}</p>
           <p>Kön: {sex.charAt(0).toUpperCase() + sex.slice(1)}</p>
           <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
           <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
           <div className="interest-button">
-            <img id="paw-print" src="./vit-tass.png" />
+            <img id="paw-print" src="./vit-tass.png" alt="" />
             <a href="mailto:intresseanmalan@matching-paws.com">
               Intresseanmälan
             </a>

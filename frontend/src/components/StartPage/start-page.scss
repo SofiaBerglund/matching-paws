@@ -9,6 +9,7 @@ $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  height: auto;
 }
 
 .search-container {
@@ -83,6 +84,7 @@ input[type="checkbox"] {
   cursor: pointer;
   margin-bottom: 20px;
   border-radius: 10px;
+  border: transparent !important;
 }
 .submit-button #paw-print {
   width: 30px;
@@ -92,12 +94,17 @@ input[type="checkbox"] {
 }
 
 .matches-container {
-  background-color: #fbf4ed;
+  // background-color: #fbf4ed;
   padding-bottom: 50px;
 }
 
+.results-header {
+  width: 100%;
+  text-align: center;
+}
+
 .matches-container h1 {
-  background-color: #fbf4ed;
+  // background-color: #fbf4ed;
   text-align: center;
 }
 

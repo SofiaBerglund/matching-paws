@@ -212,7 +212,7 @@ export default class StartPage extends React.Component {
                   </div>
                 </div>
                 <div className="submit-button">
-                  <img id="paw-print" src="./vit-tass.png" />
+                  <img id="paw-print" src="./vit-tass.png" alt="" />
                   <input type="submit" value="Hitta hund" />
                 </div>
               </form>
@@ -224,7 +224,9 @@ export default class StartPage extends React.Component {
             <div className="back-button" onClick={this.handleOnClick}>
               <h3>Tillbaka till sök</h3>
             </div>
-            <h1>Dina matchningar!</h1>
+            <div className="results-header">
+              <h1>Dina matchningar!</h1>
+            </div>
             {this.state.filteredSearch.animals.length === 0 ? (
               <p>Tyvärr hittar vi inga matchningar</p>
             ) : (

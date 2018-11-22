@@ -3,7 +3,7 @@ $useFlex: flex;
 $fontStyle: "KoHo", sans-serif;
 $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
 
-.login-wrapper {
+.aboutus-wrapper {
   background-image: $backgroundImage;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,7 @@ $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
   height: auto;
 }
 
-.login-container {
+.aboutus-container {
   width: 100%;
   height: 120vh;
   display: $useFlex;

@@ -3,7 +3,7 @@ a {
   color: #000;
 }
 .detailed-info-wrapper {
-  background-color: #fbf4ed;
+  // background-color: #fbf4ed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ a {
 
 .detailed-info-container {
   margin: 4px 10px;
-  padding: 2px;
+  padding: 0 10px;
 }
 
 .interest-button {
