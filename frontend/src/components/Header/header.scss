@@ -2,18 +2,18 @@ $fontStyle: "KoHo", sans-serif;
 $fontStyleHeader: 'Montserrat', sans-serif;
 
 .header {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header h1 {
   text-align: center;
-<<<<<<< HEAD
-  margin: 30px 0 20px 20px;
   font-family: $fontStyleHeader;
   text-transform: uppercase;
-=======
-  margin: 10px 0 30px 20px;
->>>>>>> 53cee669216cc36c11cbc1aeeba87cc09f0ff26f
+  font-size: 28px;
+  margin: 20px 10px;
 }
 ul {
   list-style: none;
@@ -84,7 +84,8 @@ li {
   display: none;
 }
 #paw-print-header {
-  width: 50px;
+  width: 35px;
+  margin:0 20px;
 }
 
 #home-link {
