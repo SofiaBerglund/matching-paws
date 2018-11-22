@@ -23,6 +23,10 @@ export default class DetailedInfoPage extends React.Component {
       })
   }
 
+  handleOnClick = e => {
+    this.props.history.goBack()
+  }
+
   render() {
     if (!this.state.detailedInfo) {
       return <div>loading...</div>
