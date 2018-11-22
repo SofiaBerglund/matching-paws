@@ -13,6 +13,7 @@ a {
 .detailed-info-container {
   margin: 4px 10px;
   padding: 0 10px;
+  box-shadow: 5px 5px 5px 5px grey;
 }
 
 .interest-button {
@@ -39,3 +40,5 @@ a {
   top: 20%;
   right: 107%;
 }
+
+@import "../../mediaqueries.scss";

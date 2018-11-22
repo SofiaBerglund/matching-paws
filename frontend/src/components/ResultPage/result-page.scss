@@ -10,4 +10,8 @@ img {
   text-align: center;
 }
 
+.image-container {
+  box-shadow: 5px 5px 5px grey;
+}
+
 @import "../../mediaqueries.scss";

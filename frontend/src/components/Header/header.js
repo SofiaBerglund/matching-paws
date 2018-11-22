@@ -23,7 +23,7 @@ export default class Header extends React.Component {
             ref={this.checkBox}
           />
           <div className="hamburger-container">
-            <img id="paw-print-header" src="./paw-print5.png" />
+            <img id="paw-print-header" src="./paw-print5.png" alt="" />
             <h1>Matching Paws</h1>
             <label htmlFor="hamburger" className="hamburger-label">
               <div className="hamburger-bar1" />
@@ -33,7 +33,10 @@ export default class Header extends React.Component {
           </div>
           <ul className="navbar-list">
             <Link to="/">
-              <li id="home-link" onClick={this.handleOnClick}> Hem </li>
+              <li id="home-link" onClick={this.handleOnClick}>
+                {" "}
+                Hem{" "}
+              </li>
             </Link>
             <Link to="/aboutus">
               <li onClick={this.handleOnClick}> Om oss </li>
