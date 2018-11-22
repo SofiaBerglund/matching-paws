@@ -44,11 +44,9 @@ export default class StartPage extends React.Component {
 
   findAnimals = e => {
     const { sex, size, age, catOk, dogOk } = this.state
-    // const search = this.state.filteredSearch
     e.preventDefault()
     fetch(filteredAnimals, {
       method: "post",
-      //removed age for now because the function can't handle an empty array. figure out how to include in filter
       body: JSON.stringify({ sex, size, age, catOk, dogOk }),
       headers: { "Content-Type": "application/json" }
     })
@@ -56,7 +54,6 @@ export default class StartPage extends React.Component {
         return response.json()
       })
       .then(json => {
-        // localStorage.setItem("stored animals", JSON.stringify(json))
         this.setState({
           filteredSearch: json,
           show: false,

@@ -23,7 +23,9 @@ export default class Header extends React.Component {
             ref={this.checkBox}
           />
           <div className="hamburger-container">
-            <img id="paw-print-header" src="./paw-print5.png" alt="" />
+            <Link to="/">
+              <img id="paw-print-header" src="./paw-print5.png" alt="" />
+            </Link>
             <h1>Matching Paws</h1>
             <label htmlFor="hamburger" className="hamburger-label">
               <div className="hamburger-bar1" />
