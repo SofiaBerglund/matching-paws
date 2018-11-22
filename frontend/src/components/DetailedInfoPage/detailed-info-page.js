@@ -34,7 +34,7 @@ export default class DetailedInfoPage extends React.Component {
           <p>Storlek: {size.charAt(0).toUpperCase() + size.slice(1)}</p>
           <p>Ålder: {age.charAt(0).toUpperCase() + age.slice(1)}</p>
           <div className="interest-button">
-            <img id="paw-print" src="./paw-print2.png" alt="" />
+            <img id="paw-print" src="./vit-tass.png" />
             <a href="mailto:intresseanmalan@matching-paws.com">
               Intresseanmälan
             </a>
