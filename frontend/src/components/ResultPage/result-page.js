@@ -41,41 +41,47 @@ export default class ResultPage extends React.Component {
 
   render() {
     return (
-      <div className="matches-container">
-        {this.state.searchResults.length === 0 ? (
-          <p>Tyvärr hittar vi inga matchningar</p>
-        ) : (
-          this.state.searchResults.map(item => {
-            return (
-              <div className="result-page-wrapper">
-                <div className="result-page-container">
-                  <Link to={`/results/${item._id}`}>
-                    <h2>{item.name}</h2>
-                    <div className="image-container">
-                      <img src={item.image} alt="" />
-                    </div>
-                    <p>
-                      Kön:
-                      {item.sex.charAt(0).toUpperCase() + item.sex.slice(1)}
-                    </p>
-                    <p>
-                      Storlek:
-                      {item.size.charAt(0).toUpperCase() + item.size.slice(1)}
-                    </p>
-                    <p>
-                      Ålder:
-                      {item.age.charAt(0).toUpperCase() + item.age.slice(1)}
-                    </p>
-                    <div className="submit-button">
-                      <img id="paw-print" src="./vit-tass.png" alt="" />
-                      <input type="submit" value="Läs mer!" />
-                    </div>
-                  </Link>
+      <div>
+        <div className="results-header">
+          <h1>Dina matchningar!</h1>
+        </div>
+
+        <div className="matches-container">
+          {this.state.searchResults.length === 0 ? (
+            <p>Tyvärr hittar vi inga matchningar</p>
+          ) : (
+            this.state.searchResults.map(item => {
+              return (
+                <div className="result-page-wrapper">
+                  <div className="result-page-container">
+                    <Link to={`/results/${item._id}`}>
+                      <h2>{item.name}</h2>
+                      <div className="image-container">
+                        <img src={item.image} alt="" />
+                      </div>
+                      <p>
+                        Kön:
+                        {item.sex.charAt(0).toUpperCase() + item.sex.slice(1)}
+                      </p>
+                      <p>
+                        Storlek:
+                        {item.size.charAt(0).toUpperCase() + item.size.slice(1)}
+                      </p>
+                      <p>
+                        Ålder:
+                        {item.age.charAt(0).toUpperCase() + item.age.slice(1)}
+                      </p>
+                      <div className="submit-button">
+                        <img id="paw-print" src="./vit-tass.png" alt="" />
+                        <input type="submit" value="Läs mer!" />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            )
-          })
-        )}
+              )
+            })
+          )}
+        </div>
       </div>
     )
   }

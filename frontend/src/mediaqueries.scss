@@ -20,6 +20,7 @@ $fontStyle: "KoHo", sans-serif;
     margin: 0 auto;
     border-radius: 20px;
   }
+
   .result-page-wrapper {
     width: calc(50% - 40px);
     padding: 0px 10px;
@@ -38,7 +39,8 @@ $fontStyle: "KoHo", sans-serif;
   }
 
   .image-container {
-    height: 50%;
+    height: 60%;
+    margin: 0 80px;
     overflow: hidden;
   }
 
@@ -68,6 +70,10 @@ $fontStyle: "KoHo", sans-serif;
     border: none;
   }
 
+  .results-header {
+    text-align: center;
+  }
+
   .matches-container {
     width: auto;
     height: 100%;
@@ -80,8 +86,16 @@ $fontStyle: "KoHo", sans-serif;
     font-size: 20px;
   }
 
+  .detailed-info-container {
+    width: 70%;
+  }
+
+  .detailed-info-container img {
+    width: 80%;
+  }
+
   .detailed-info-container p {
-    padding: 0 250px;
+    padding: 0 50px;
   }
 
   .detailed-info-wrapper h3 {
