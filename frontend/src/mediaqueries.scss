@@ -14,15 +14,25 @@ $fontStyle: "KoHo", sans-serif;
     border-radius: 20px;
   }
   .result-page-wrapper {
-    width: 100%;
+    width: calc(50% - 40px);
     padding: 0px 10px;
   }
+
+  .result-page-container {
+    margin: 4px 10px;
+    padding: 2px 0 50px;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+
   .submit-button {
     margin-top: 40px;
   }
+
   img {
     width: 30%;
   }
+
   .hamburger-label {
     display: none;
   }
@@ -37,14 +47,17 @@ $fontStyle: "KoHo", sans-serif;
     padding: 0 20px;
     width: 100%;
   }
+
   li {
     margin: auto;
     border: none;
   }
+
   .matches-container {
-    width: 50%;
-    padding: 0;
-    margin: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
   }
 
   p {
