@@ -3,8 +3,13 @@ import "./header.scss"
 import { Link } from "react-router-dom"
 
 export default class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    this.checkBox = React.createRef()
+  }
+
   handleOnClick = e => {
-    window.location.reload(true)
+    this.checkBox.current.checked = false
   }
 
   render() {
@@ -15,6 +20,7 @@ export default class Header extends React.Component {
             id="hamburger"
             className="hamburger-checkbox"
             type="checkbox"
+            ref={this.checkBox}
           />
           <div className="hamburger-container">
             <h1>Matching Paws</h1>
