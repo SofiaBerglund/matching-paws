@@ -74,10 +74,6 @@ export default class StartPage extends React.Component {
     )
   }
 
-  handleOnClick = e => {
-    window.location.reload()
-  }
-
   render() {
     return (
       <div>
@@ -233,32 +229,6 @@ export default class StartPage extends React.Component {
           </div>
           )}
         </div>
-        {/* {this.state.showResults && (
-          <div className="matches-container">
-            <div className="back-button" onClick={this.handleOnClick}>
-              <h3>Tillbaka till sök</h3>
-            </div>
-            <div className="results-header">
-              <h1>Dina matchningar!</h1>
-            </div>
-            {this.state.filteredSearch.animals.length === 0 ? (
-              <p>Tyvärr hittar vi inga matchningar</p>
-            ) : (
-              this.state.filteredSearch.animals.map(item => {
-                return (
-                  <ResultPage
-                    id={item._id}
-                    name={item.name}
-                    sex={item.sex}
-                    size={item.size}
-                    age={item.age}
-                    image={item.image}
-                  />
-                )
-              })
-            )}
-          </div>
-        )} */}
       </div>
     )
   }
