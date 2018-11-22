@@ -7,7 +7,12 @@ class LogIn extends React.Component {
       <div>
         <div className="login-wrapper">
           <div className="login-container">
-            <h1>Hello from LogIn</h1>
+            <h1>Logga in</h1>
+            <p>
+              Snart kommer det bli möjligt att registrera sig som användare. Då
+              kommer det bli möjligt att göra anpassade inställningar samt själv
+              lägga upp hundar som behöver ett hem.
+            </p>
           </div>
         </div>
       </div>

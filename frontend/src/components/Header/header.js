@@ -34,9 +34,6 @@ export default class Header extends React.Component {
             <Link to="/login">
               <li onClick={this.handleOnClick}> Logga in </li>
             </Link>
-            <Link to="/contact">
-              <li onClick={this.handleOnClick}> Kontakt </li>
-            </Link>
           </ul>
         </header>
       </div>

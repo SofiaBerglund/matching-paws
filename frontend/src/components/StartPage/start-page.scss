@@ -9,6 +9,7 @@ $backgroundColorOpacity: rgba(250, 250, 250, 0.6);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  height: auto;
 }
 
 .search-container {
@@ -92,12 +93,12 @@ input[type="checkbox"] {
 }
 
 .matches-container {
-  background-color: #fbf4ed;
+  // background-color: #fbf4ed;
   padding-bottom: 50px;
 }
 
 .matches-container h1 {
-  background-color: #fbf4ed;
+  // background-color: #fbf4ed;
   text-align: center;
 }
 
