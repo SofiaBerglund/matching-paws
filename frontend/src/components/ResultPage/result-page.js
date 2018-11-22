@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./result-page.scss"
 import queryString from "query-string"
-import DetailedInfoPage from "../DetailedInfoPage/detailed-info-page"
 const filteredAnimals =
   process.env.NODE_ENV === "production"
     ? "https://matching-paws.herokuapp.com/animals/search"
@@ -26,7 +25,6 @@ export default class ResultPage extends React.Component {
     console.log(body)
     fetch(filteredAnimals, {
       method: "post",
-      //removed age for now because the function can't handle an empty array. figure out how to include in filter
       body,
       headers: { "Content-Type": "application/json" }
     })
@@ -35,15 +33,51 @@ export default class ResultPage extends React.Component {
         return response.json()
       })
       .then(json => {
-        // localStorage.setItem("stored animals", JSON.stringify(json))
         this.setState({
-          searchResults: json
+          searchResults: json.animals
         })
       })
   }
 
   render() {
-    return <div>results page</div>
+    return (
+      <div>
+        {this.state.searchResults.length === 0 ? (
+          <p>Tyvärr hittar vi inga matchningar</p>
+        ) : (
+          this.state.searchResults.map(item => {
+            return (
+              <div className="result-page-wrapper">
+                <div className="result-page-container">
+                  <Link to={`/results/${item._id}`}>
+                    <h2>{item.name}</h2>
+                    <div className="image-container">
+                      <img src={item.image} alt="" />
+                    </div>
+                    <p>
+                      Kön:
+                      {item.sex.charAt(0).toUpperCase() + item.sex.slice(1)}
+                    </p>
+                    <p>
+                      Storlek:
+                      {item.size.charAt(0).toUpperCase() + item.size.slice(1)}
+                    </p>
+                    <p>
+                      Ålder:
+                      {item.age.charAt(0).toUpperCase() + item.age.slice(1)}
+                    </p>
+                    <div className="submit-button">
+                      <img id="paw-print" src="./vit-tass.png" alt="" />
+                      <input type="submit" value="Läs mer!" />
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            )
+          })
+        )}
+      </div>
+    )
   }
 }
 //   render() {

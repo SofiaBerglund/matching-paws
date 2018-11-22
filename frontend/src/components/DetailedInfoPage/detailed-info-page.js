@@ -1,28 +1,37 @@
 import React from "react"
 import "./detailed-info-page.scss"
+const filteredAnimals =
+  process.env.NODE_ENV === "production"
+    ? "https://matching-paws.herokuapp.com/animals/"
+    : "http://localhost:8080/animals/"
 
 export default class DetailedInfoPage extends React.Component {
   state = {
-    detailedInfo: []
+    detailedInfo: null
+  }
+
+  componentDidMount() {
+    const details = `http://localhost:8080/animals/${
+      this.props.match.params.id
+    }`
+    fetch(details)
+      .then(response => {
+        console.log(response)
+        return response.json()
+      })
+      .then(json => {
+        this.setState({
+          detailedInfo: json
+        })
+      })
   }
 
   render() {
-    const id = this.props.match.params.id
+    if (!this.state.detailedInfo) {
+      return <div> loading</div>
+    }
 
-    const animalDataString = localStorage.getItem("stored animals")
-
-    const animalData = JSON.parse(animalDataString)
-
-    let animalObject
-
-    animalData.animals.forEach(element => {
-      if (id === element._id) {
-        animalObject = element
-      }
-    })
-
-    const { name, sex, size, age, image, description } = animalObject
-
+    const { name, sex, size, age, image, description } = this.state.detailedInfo
     return (
       <div className="detailed-info-wrapper">
         <div className="detailed-info-container">
