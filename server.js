@@ -49,6 +49,12 @@ app.get("/animals", (req, res) => {
   })
 })
 
+app.get("/animals/:id", (req, res) => {
+  Animal.findById(req.params.id).then(animal => {
+    res.json(animal)
+  })
+})
+
 app.post("/animals/search", (req, res) => {
   const options = {
     sex: { $in: req.body.sex },
@@ -80,7 +86,6 @@ app.post("/animals", (req, res) => {
     })
     .catch(err => {
       res.status(400).send(err)
-      // test
     })
 })
 
