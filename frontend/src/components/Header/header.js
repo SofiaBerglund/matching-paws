@@ -17,6 +17,7 @@ export default class Header extends React.Component {
             type="checkbox"
           />
           <div className="hamburger-container">
+            <img id="paw-print-header" src="./paw-print5.png" />
             <h1>Matching Paws</h1>
             <label htmlFor="hamburger" className="hamburger-label">
               <div className="hamburger-bar1" />
@@ -26,7 +27,7 @@ export default class Header extends React.Component {
           </div>
           <ul className="navbar-list">
             <Link to="/">
-              <li onClick={this.handleOnClick}> Hem </li>
+              <li id="home-link" onClick={this.handleOnClick}> Hem </li>
             </Link>
             <Link to="/aboutus">
               <li onClick={this.handleOnClick}> Om oss </li>

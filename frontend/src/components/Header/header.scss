@@ -1,8 +1,11 @@
 $fontStyle: "KoHo", sans-serif;
+$fontStyleHeader: 'Montserrat', sans-serif;
 
 .header h1 {
   text-align: center;
-  margin: 10px 0 20px 20px;
+  margin: 30px 0 20px 20px;
+  font-family: $fontStyleHeader;
+  text-transform: uppercase;
 }
 ul {
   list-style: none;
@@ -71,4 +74,11 @@ li {
 
 .hamburger-checkbox {
   display: none;
+}
+#paw-print-header {
+  width: 50px;
+}
+
+#home-link {
+  color: #D5587F;
 }
